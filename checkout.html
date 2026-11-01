@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Request | Apexmall</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <a href="index.html" class="logo">Apexmall</a>
+    <nav class="navigation">
+        <a href="shop.html">Shop</a>
+        <a href="index.html#categories">Categories</a>
+        <a href="index.html#about">About</a>
+    </nav>
+    <div class="header-actions">
+        <a href="cart.html" class="cart">Cart <span id="cart-count">0</span></a>
+    </div>
+</header>
+
+<main>
+    <section class="checkout-header">
+        <p class="eyebrow">ORDER ON WHATSAPP</p>
+        <h1>Send your order</h1>
+        <p>Check your items and send your order details directly to Apexmall on WhatsApp.</p>
+    </section>
+
+    <section class="checkout-section">
+        <div class="checkout-layout">
+            <div class="checkout-main">
+                <section class="checkout-card">
+                    <div class="checkout-card-heading">
+                        <span class="checkout-number">01</span>
+                        <div>
+                            <h2>Your items</h2>
+                            <p>Quantities are included in your WhatsApp message.</p>
+                        </div>
+                    </div>
+                    <div id="checkout-items" class="checkout-items"></div>
+                    <div class="summary-row">
+                        <span>Estimated subtotal</span>
+                        <strong id="checkout-subtotal">GH₵0.00</strong>
+                    </div>
+                    <p class="loading-note">Delivery fees and final availability will be confirmed in WhatsApp.</p>
+                </section>
+
+                <form id="checkout-form">
+                    <section class="checkout-card">
+                        <div class="checkout-card-heading">
+                            <span class="checkout-number">02</span>
+                            <div>
+                                <h2>Your details</h2>
+                                <p>These details will be added to your WhatsApp message.</p>
+                            </div>
+                        </div>
+                        <div class="checkout-grid">
+                            <label>
+                                Full name
+                                <input type="text" id="customer-name" required autocomplete="name" placeholder="Your full name">
+                            </label>
+                            <label>
+                                Phone number
+                                <input type="tel" id="customer-phone" required autocomplete="tel" placeholder="Your phone number">
+                            </label>
+                            <label class="full-width">
+                                Delivery address or area
+                                <textarea id="delivery-address" required rows="3" autocomplete="street-address" placeholder="Your area, address, or preferred delivery location"></textarea>
+                            </label>
+                            <label class="full-width">
+                                Question or special request (optional)
+                                <textarea id="order-enquiry" rows="3" placeholder="Ask a question or add a note about your order"></textarea>
+                            </label>
+                        </div>
+                    </section>
+
+                    <p id="checkout-message" class="form-message" role="status"></p>
+                    <button type="submit" id="place-order" class="btn btn-primary place-order-button">
+                        Continue to WhatsApp
+                    </button>
+                </form>
+            </div>
+
+            <aside class="checkout-card">
+                <h2>What happens next?</h2>
+                <p>WhatsApp will open with your order details ready to send. Apexmall will confirm availability, delivery, and the final total with you in chat.</p>
+                <a href="shop.html" class="continue-shopping">Continue shopping</a>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-brand">
+        <h3>Apexmall</h3>
+        <p>Quality products. Exceptional experience.</p>
+    </div>
+</footer>
+<script type="module" src="js/checkout.js"></script>
+</body>
+</html>

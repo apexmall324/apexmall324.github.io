@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Shop | Apexmall</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+    <a
+        href="index.html"
+        class="logo"
+    >
+        Apexmall
+    </a>
+
+
+    <nav class="navigation">
+
+        <a href="shop.html">
+            Shop
+        </a>
+
+        <a href="index.html#categories">
+            Categories
+        </a>
+
+        <a href="index.html#about">
+            About
+        </a>
+
+    </nav>
+
+
+    <div class="header-actions">
+
+        <a
+            href="cart.html"
+            class="cart"
+        >
+            Cart
+
+            <span id="cart-count">
+                0
+            </span>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+    <!-- SHOP HEADER -->
+
+    <section class="shop-header">
+
+        <p class="eyebrow">
+            OUR COLLECTION
+        </p>
+
+        <h1>
+            Shop
+        </h1>
+
+        <p>
+            Discover our complete collection.
+        </p>
+
+    </section>
+
+
+
+    <!-- SHOP CONTROLS -->
+
+    <section class="shop-section">
+
+
+        <div class="shop-controls">
+
+
+            <div class="search-box">
+
+                <input
+                    type="search"
+                    id="product-search"
+                    placeholder="Search products..."
+                    aria-label="Search products"
+                >
+
+            </div>
+
+
+            <select id="category-filter" aria-label="Filter by product category">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+            </select>
+
+
+            <select id="sort-products" aria-label="Sort products">
+
+                <option value="default">
+                    Sort by
+                </option>
+
+                <option value="newest">
+                    Newest
+                </option>
+
+                <option value="price-low">
+                    Price: Low to High
+                </option>
+
+                <option value="price-high">
+                    Price: High to Low
+                </option>
+
+                <option value="name">
+                    Name
+                </option>
+
+            </select>
+
+
+        </div>
+
+
+
+        <!-- PRODUCT COUNT -->
+
+        <div class="product-count">
+
+            <span id="product-count">
+                0 products
+            </span>
+
+        </div>
+
+
+
+        <!-- PRODUCTS -->
+
+        <div
+            id="shop-products"
+            class="products"
+        ></div>
+
+
+    </section>
+
+</main>
+
+
+
+<footer class="footer">
+
+    <div class="footer-brand">
+
+        <h3>
+            Apexmall
+        </h3>
+
+        <p>
+            Quality products.
+            Exceptional experience.
+        </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <h4>
+            Shop
+        </h4>
+
+        <a href="shop.html">
+            All Products
+        </a>
+
+        <a href="cart.html">
+            Cart
+        </a>
+
+    </div>
+
+
+</footer>
+
+
+
+<script
+    type="module"
+    src="js/shop.js"
+></script>
+
+
+</body>
+
+</html>

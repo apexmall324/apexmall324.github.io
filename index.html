@@ -1,187 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>APEX MALL | Online Digital Shop</title>
+    <title>Apexmall | Shop Online</title>
 
-  <!-- SEO -->
-  <meta name="description" content="APEX MALL is an online digital shop for data bundles, documentations, designs, and web-related products. Fast delivery via WhatsApp.">
-  <meta name="theme-color" content="#0A1AFF">
-
-  <!-- Fonts -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"> -->
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <a class="skip-link" href="#products">Skip to content</a>
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar">
-  <a href="index.html" class="logo">APEX<span>MALL</span></a>
+    <!-- ================= HEADER ================= -->
 
-  <div class="search-wrapper">
-    <input 
-      type="search"
-      id="searchInput"
-      placeholder="Search by name or category..."
-      class="search-bar"
-      aria-label="Search products"
-      autocomplete="off"
-    >
-    <div id="searchSuggestions" class="search-suggestions" role="listbox" aria-label="Search suggestions"></div>
-  </div>
-  <!-- Mobile dropdown menu (categories, WhatsApp, quick links) -->
-  <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
-    <div class="mobile-menu-inner">
-      <h4>Menu</h4>
-      <div id="mobileCategories" class="mobile-categories"></div>
-      <a class="mobile-link" href="https://wa.me/233597323795" target="_blank" rel="noopener noreferrer">💬 WhatsApp to Purchase</a>
-      <a class="mobile-link" href="#products">Browse Products</a>
-      <a class="mobile-link" href="https://apexmall324.github.io/Apex-DataHub/">Data Bundles</a>
-    </div>
-  </div>
-  
-  <div class="nav-actions">
-    <button id="navToggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-      <span class="hamburger" aria-hidden="true"></span>
-    </button>
+    <header class="header">
 
-    <a href="https://wa.me/233597323795" class="nav-btn nav-desktop" target="_blank" rel="noopener noreferrer">Order Now</a>
-  </div>
+        <a href="index.html" class="logo">
+            Apexmall
+        </a>
 
+        <nav class="navigation">
+            <a href="shop.html">Shop</a>
+            <a href="index.html#categories">Categories</a>
+            <a href="index.html#about">About</a>
+        </nav>
 
-</nav>
+        <div class="header-actions">
 
-<!-- ================= HERO ================= -->
-<header class="hero">
-  <h1>Shop Digital Products Online</h1>
-  <p>Affordable • Fast • Trusted Digital Marketplace</p>
+            <a href="cart.html" class="cart">
+                Cart
+                <span id="cart-count">0</span>
+            </a>
 
-  <a href="#products" class="hero-btn">Browse Products</a>
-</header>
-
-<!-- ================= CATEGORIES ================= -->
-<section class="categories">
-  <button class="category active" data-category="all">All</button>
-  <button class="category" data-category="data">Data Bundles</button>
-  <button class="category" data-category="documents">Documents</button>
-  <button class="category" data-category="design">Designs</button>
-  <button class="category" data-category="web">Web</button>
-</section>
-
-<!-- ================= PRODUCT CONTROLS (filters & sort) ================= -->
-<section class="product-controls">
-  <div class="controls">
-    <div class="filters">
-      <label class="price-label">Price range
-        <div class="price-inputs">
-          <input type="number" id="priceMinInput" placeholder="Min" min="0" aria-label="Minimum price" />
-          <span class="dash">—</span>
-          <input type="number" id="priceMaxInput" placeholder="Max" min="0" aria-label="Maximum price" />
         </div>
-      </label>
-      <label class="in-stock-label"><input type="checkbox" id="inStockOnly" /> In stock only</label>
-    </div>
 
-    <div class="sort">
-      <label for="sortSelect">Sort</label>
-      <select id="sortSelect" aria-label="Sort products">
-        <option value="relevance">Relevance</option>
-        <option value="price-asc">Price: Low → High</option>
-        <option value="price-desc">Price: High → Low</option>
-        <option value="name-asc">Name A → Z</option>
-        <option value="name-desc">Name Z → A</option>
-      </select>
-    </div>
-  </div>
-</section>
+    </header>
 
-<!-- ================= PRODUCTS ================= -->
-<section class="products" id="products">
-  <!-- <h2>Available Products</h2> -->
-  <div id="products-container" class="grid"></div>
-  
-</section>
 
-<!-- ================= TRUST ================= -->
-<section class="trust">
-  <div class="trust-card">⚡ Fast Delivery</div>
-  <div class="trust-card">🔒 Trusted Payments</div>
-  <div class="trust-card">💬 WhatsApp Support</div>
-</section>
+    <!-- ================= HERO ================= -->
 
-<!-- ================= CTA ================= -->
-<section class="cta">
-  <h3>Need Help Ordering?</h3>
-  <p>Chat with us instantly on WhatsApp</p>
-  <a href="https://wa.me/233597323795" class="cta-btn">💬 Chat Now</a>
-</section>
+    <main>
 
-<!-- ================= MODAL ================= -->
-<div id="productModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDescription" tabindex="-1" inert>
-  <div class="modal-overlay"></div>
-  <div class="modal-content">
-    <button class="modal-close" aria-label="Close dialog">✕</button>
-    <div class="modal-media"></div>
-    <div class="modal-thumbs"></div>
-    <div class="modal-info">
-      <h2 id="modalTitle"></h2>
-      <div id="modalPrice" class="modal-price"></div>
-      <p id="modalDescription"></p>
-      <ul id="modalSpecs"></ul>
+        <section class="hero" aria-label="Featured collections">
 
-      <div class="modal-order-controls">
-        <label for="modalQuantity">Qty</label>
-        <input id="modalQuantity" type="number" min="1" value="1" aria-label="Quantity" />
-      </div>
+            <div class="hero-content">
 
-      <div class="modal-order-actions">
-        <a id="modalOrderBtn" class="buy-btn" target="_blank" rel="noopener noreferrer">Order Now</a>
-        <a id="modalNotifyBtn" class="notify-btn" target="_blank" rel="noopener" style="display:none; margin-left:0.6rem;">Notify Me</a>
-      </div>
-    </div>
-  </div>
-</div>
+                <div class="hero-copy" aria-live="off">
+                    <p class="eyebrow" id="hero-eyebrow">NEW COLLECTION</p>
+                    <h1 id="hero-title">Discover products you'll love.</h1>
+                    <p class="hero-description" id="hero-description">
+                        Explore our latest collection and find something made just for you.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="shop.html" class="btn btn-primary" id="hero-cta">Shop Now</a>
+                        <a href="#featured" class="btn btn-secondary">Explore</a>
+                    </div>
+                </div>
+            </div>
 
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <div class="footer-content">
 
-    <div class="footer-brand">
-      <h3>APEX<span>MALL</span></h3>
-      <p>Your trusted digital shop.</p>
-    </div>
+            <div class="hero-image" aria-roledescription="carousel" aria-label="Store banners">
+                <img id="hero-image" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=85" alt="Apexmall shopping collection">
+                <div class="hero-controls">
+                    <button class="hero-arrow" id="hero-previous" type="button" aria-label="Previous banner">‹</button>
+                    <div class="hero-dots" id="hero-dots" aria-label="Choose a banner"></div>
+                    <button class="hero-arrow" id="hero-next" type="button" aria-label="Next banner">›</button>
+                </div>
+            </div>
 
-    <div class="footer-links">
-      <h4>Services</h4>
-      <a href="https://apexmall324.github.io/Apex-DataHub/">Data Bundles</a>
-      <a href="#">Web Development</a>
-      <a href="#">Document Services</a>
-      <a href="#">Graphic Design</a>
+        </section>
 
-    </div>
+        <a class="promo-strip" href="shop.html">
+            <span class="promo-strip-label">FRESH FINDS</span>
+            <span>Shop selected products and get your order within 2–3 days after placing it.</span>
+            <span class="promo-strip-link">Shop now <span aria-hidden="true">→</span></span>
+        </a>
 
-    <div class="footer-contact">
-      <h4>Contact</h4>
-      <p>📞 0597323795</p>
-      <a href="https://wa.me/233597323795">WhatsApp</a>
-    </div>
+        <section class="stories-section" aria-labelledby="stories-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">FROM OUR COMMUNITY</p>
+                    <h2 id="stories-title">Reviews &amp; dispatch updates</h2>
+                </div>
+            </div>
+            <div class="stories-rail" id="stories-rail" aria-label="Customer reviews and order updates"></div>
+        </section>
 
-  </div>
 
-  <p class="footer-bottom">
-    © 2026 APEX MALL. All Rights Reserved.
-  </p>
-</footer>
+        <!-- ================= CATEGORIES ================= -->
 
-<!-- ================= BACK TO TOP BUTTON ================= -->
-<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+        <section class="section" id="categories">
 
-<script src="script.js" defer></script>
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">
+                        SHOP BY CATEGORY
+                    </p>
+
+                    <h2>
+                        Find what you need.
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div class="categories" id="category-rail">
+                <!-- Categories are built from the local product catalog. -->
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURED PRODUCTS ================= -->
+
+        <section class="section" id="featured">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        FEATURED
+                    </p>
+
+                    <h2>
+                        Best sellers
+                    </h2>
+
+                </div>
+
+                <a href="shop.html" class="view-all">
+                    View all →
+                </a>
+
+            </div>
+
+
+            <div class="products" id="featured-products">
+
+                <!-- Products will be inserted by JavaScript -->
+
+            </div>
+
+        </section>
+
+        <section class="section" id="new-arrivals">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">JUST IN</p>
+                    <h2>New arrivals</h2>
+                </div>
+                <a href="shop.html?sort=newest" class="view-all">Shop new →</a>
+            </div>
+            <div class="products" id="new-products"></div>
+        </section>
+
+        <section class="section" id="limited-stock">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">LIMITED STOCK</p>
+                    <h2>Moving quickly</h2>
+                </div>
+            </div>
+            <div class="products" id="limited-products"></div>
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about section" id="about">
+
+            <div class="about-content">
+
+                <p class="eyebrow">
+                    OUR STORY
+                </p>
+
+                <h2>
+                    More than just
+                    an online store.
+                </h2>
+
+                <p>
+                    Apexmall makes online shopping feel personal,
+                    practical, and dependable. We curate useful,
+                    well-presented products, keep checkout simple,
+                    and stay available when you need help.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-brand">
+
+            <h3>
+                Apexmall
+            </h3>
+
+            <p>
+                Quality products.
+                Exceptional experience.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h4>
+                Shop
+            </h4>
+
+            <a href="shop.html">
+                All Products
+            </a>
+
+            <a href="#featured">
+                Best Sellers
+            </a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h4>
+                Help
+            </h4>
+
+            <a href="policies.html#contact">
+                Contact Us
+            </a>
+            <a href="https://wa.me/233597323795" target="_blank" rel="noopener">
+                Product Enquiry
+            </a>
+
+            <a href="policies.html#delivery">
+                Delivery
+            </a>
+
+            <a href="policies.html#returns">
+                Returns
+            </a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h4>
+                Follow Us
+            </h4>
+
+            <a href="https://www.tiktok.com/@apex.mall" target="_blank" rel="noopener">
+                TikTok
+            </a>
+
+            <a href="https://wa.me/233597323795" target="_blank" rel="noopener">
+                WhatsApp
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script type="module" src="js/app.js"></script>
+
 </body>
 </html>

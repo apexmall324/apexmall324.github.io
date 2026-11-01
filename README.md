@@ -1,56 +1,53 @@
-# ApexMall — Static JSON-driven Marketplace
+# Apexmall
 
-This is a simple, fast, and responsive static site for ApexMall that loads products and services from JSON data files.
+A static storefront built with HTML, CSS, and JavaScript. The product catalog is local, the cart is saved in the visitor's browser, and order requests and product enquiries are sent through WhatsApp. This project does not use a customer account, admin dashboard, or backend service.
 
-Quick start (local)
-1. Clone the repo and put these files at the site root.
-2. Run a local static server:
-   - Python: `python -m http.server 8000` (in the folder)
-   - Node: `npx http-server -p 8080` or `npx serve`
-3. Open `http://localhost:8000` in your browser.
+## Add products, images, and videos
 
-How it works
-- products.json and services.json hold all displayed data.
-- script.js fetches those files and renders HTML on the client.
-- Products with `external_url` will direct users to that URL (e.g., your mydukeshop checkout).
-- Products without external_url open WhatsApp with a prefilled message (set `whatsapp` with your number in international format, no plus sign).
+Put product photos and video files in the root [product](./product/) folder, then add product records to the `PRODUCTS` array in [js/app.js](./js/app.js). Media paths are relative to the project root. Videos should be MP4 or WebM files; for large videos, use a video host and provide a direct link to the video file.
 
-Customization
-- Replace images with your hosted images (Cloudinary, S3, or direct URLs).
-- Edit prices, descriptions, and add/remove items in the JSON files.
-- Update the global contact number in `script.js` (DEFAULT_WA_NUMBER) and contact links.
+Add another product object inside the existing array (keep its surrounding `export const PRODUCTS = [ ... ];`):
 
-Deployment
-- GitHub Pages: push to `gh-pages` or to `main` with appropriate settings.
-- Vercel / Netlify: connect the repo and deploy (automatic).
+```js
+{
+    id: "sample-item",
+    name: "Sample item",
+    category: { id: "accessories", name: "Accessories", image: "product/accessories.jpg" },
+    price: 45,
+    stock: 8,
+    description: "A short product description.",
+    image: "product/sample-item.jpg",
+    gallery: [],
+    videos: ["product/sample-item-video.mp4"],
+    is_featured: true,
+    created_at: "2026-10-31"
+},
+```
 
-Accessibility & security notes
-- No user data is stored — site simply offers contact links and external redirects.
-- If you ever add forms or payment flows, use HTTPS and trusted payment providers.
+Use a unique `id`, a numeric `price` and `stock`, and an image path beginning with `product/`. Set `category.image` to the image you want shown on the home-page category tile; products in the same category share that image, so set it consistently. Add extra images to `gallery` and videos to `videos`; both are optional arrays, so use `[]` when you have none. Videos appear with playback controls on the product page. If a product image is unavailable, the storefront shows `product/placeholder.svg`. Product order and enquiry messages use the WhatsApp number configured in `js/app.js`.
 
-Next steps (suggested)
-- Add product categories and filter UI.
-- Add search and pagination for large catalogs.
-- Add an admin page to edit JSON data or switch to a small CMS (Netlify CMS, Forest, or a simple admin app).
-- Integrate image uploads to Cloudinary or S3 for admin product image management.
+## Homepage banners
 
-If you want, I can:
-- Scaffold a separate admin app for editing JSON (in the repo).
-- Convert this static site into a Next.js app with server-side rendering and a Prisma + MySQL backend you are familiar with.
-- Add a small CSV import to populate products.json.
+The homepage banner carousel and its text, images, and links are configured in the `BANNERS` array in [js/app.js](./js/app.js). Upload banner images to `product/` and set each banner's `image`, `alt`, `eyebrow`, `title`, `description`, `ctaLabel`, and `ctaHref`. Add more objects to create more slides. The banner pauses while a visitor hovers over it or uses its controls, and it does not auto-rotate when reduced motion is enabled.
 
-Tell me which next step you want and I’ll prepare the files or GitHub issues for it.
+## Customer review and dispatch stories
 
+The homepage Stories row is configured in the `STORIES` array in [js/app.js](./js/app.js). Add a story object with a `label`, `type`, `headline`, and `text`; set `image` to a photo path or an array of photo paths for multiple tap-through slides, with `alt` text describing them. Put story photos in `product/`. Stories are manually maintained static content: they do not expire automatically, accept customer uploads, or update without publishing the site again. Get permission before publishing customer messages or identifiable information.
 
+## Orders and enquiries
 
+Customers add items and quantities to their browser cart, then submit their name, phone number, delivery area, and any optional note. The site opens WhatsApp with a prefilled message; the customer must send it to contact Apexmall. Availability, delivery charges, and final prices are confirmed in the chat. The site does not store or submit orders to a server.
 
+Product cards and product pages also include a WhatsApp enquiry link.
 
+## Run locally
 
+Serve this folder over HTTP with XAMPP, for example `http://localhost/ApexMall2ndOri/`. The storefront uses JavaScript modules, so opening the files directly with `file://` may not work correctly.
 
-ApexMall/
-│
-├── index.html
-├── style.css
-├── script.js
-└── data/
-    └── products.json
+## Deploy
+
+The GitHub Actions workflow in `.github/workflows/pages.yml` publishes the static storefront to GitHub Pages when changes are pushed to `main` or `master`.
+
+## Existing cloud account
+
+Removing the Appwrite integration from this project does not delete a remote Appwrite project or account. If you want that cloud account and its data deleted, do so in the Appwrite Console; this local codebase has no project credentials or access to perform remote deletion.
