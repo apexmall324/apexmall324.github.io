@@ -22,7 +22,7 @@ export const PRODUCTS = [
         price: 75,
         stock: 7,
         description: "Gold-tone ladies watch with a crystal-accented heart design.",
-        image: "product/ladies-rhinestone-heart-watch.jpeg",
+        image: "product/gold-heart-watch-and-bracelet-set.jpg",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -126,7 +126,7 @@ export const PRODUCTS = [
         price: 50,
         stock: 1,
         description: "Rectangular gold-tone watch with a black strap.",
-        image: "product/black-leather-strap-rectangular-watch.jpeg",
+        image: "product/gold-tone-rectangular-black-strap-watch.png",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -162,10 +162,10 @@ export const PRODUCTS = [
         id: "pearl-crystal-watch-and-bracelet-set",
         name: "Pearl Crystal Watch and Bracelet Set",
         category: { id: "watches", name: "Watches", image: "product/ladies-gold-watch-and-bracelet-set.png" },
-        price: 50,
+        price: 95,
         stock: 1,
         description: "Gold-tone watch and matching bracelet with pearl-style and crystal accents.",
-        image: "product/pearl-crystal-watch-and-bracelet-set.jpeg",
+        image: "product/pearl-crystal-watch-and-bracelet-set.png",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -222,6 +222,175 @@ export const PRODUCTS = [
         videos: [],
         is_featured: false,
         created_at: "2026-11-01"
+    },
+    {
+        id: "plush-handbag-color-assortment",
+        name: "Plush Handbag Color Assortment",
+        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        price: 75,
+        stock: 100,
+        description: "A colorful assortment of plush handbags with beaded handles.",
+        image: "product/plush-handbag-color-assortment.png",
+        gallery: [],
+        videos: [],
+        is_featured: false,
+        created_at: "2026-11-03"
+    },
+    {
+        id: "plush-handbag-display",
+        name: "Plush Handbag Display Set",
+        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        price: 75,
+        stock: 100,
+        description: "A display of plush handbags in several colors.",
+        image: "product/plush-handbag-display.png",
+        gallery: [],
+        videos: [],
+        is_featured: false,
+        created_at: "2026-11-03"
+    },
+    {
+        id: "black-plush-beaded-handle-handbag",
+        name: "Black Plush Beaded-Handle Handbag",
+        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        price: 75,
+        stock: 100,
+        description: "A black plush handbag with a beaded handle.",
+        image: "product/black-plush-beaded-handle-handbag.png",
+        gallery: [],
+        videos: [],
+        is_featured: false,
+        created_at: "2026-11-03"
+    },
+    {
+        id: "gray-plush-beaded-handle-handbag",
+        name: "Gray Plush Beaded-Handle Handbag",
+        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        price: 75,
+        stock: 100,
+        description: "A gray plush handbag with a beaded handle.",
+        image: "product/gray-plush-beaded-handle-handbag.png",
+        gallery: [],
+        videos: [],
+        is_featured: false,
+        created_at: "2026-11-03"
+    },
+    {
+        id: "pink-plush-beaded-handle-handbag",
+        name: "Pink Plush Beaded-Handle Handbag",
+        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        price: 75,
+        stock: 100,
+        description: "A pink plush handbag with a beaded handle.",
+        image: "product/pink-plush-beaded-handle-handbag.png",
+        gallery: [],
+        videos: [],
+        is_featured: false,
+        created_at: "2026-11-03"
+    },
+    {
+        id: "taupe-plush-beaded-handle-handbag",
+        name: "Taupe Plush Beaded-Handle Handbag",
+        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        price: 75,
+        stock: 100,
+        description: "A taupe plush handbag with a beaded handle.",
+        image: "product/taupe-plush-beaded-handle-handbag.png",
+        gallery: [],
+        videos: [],
+        is_featured: false,
+        created_at: "2026-11-03"
+    },
+    {
+        id: "plush-handbag-color-collection",
+        name: "Plush Handbag Color Collection",
+        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        price: 75,
+        stock: 100,
+        description: "A collection of plush handbags in assorted colors.",
+        image: "product/plush-handbag-color-collection.png",
+        gallery: [],
+        videos: [],
+        is_featured: false,
+        created_at: "2026-11-03"
+    },
+    {
+        id: "taupe-plush-handbag-fluffy-hat-set",
+        name: "Taupe Plush Handbag and Fluffy Hat Set",
+        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        price: 85,
+        stock: 50,
+        description: "A taupe plush handbag that comes with a matching fluffy hat.",
+        image: "product/taupe-plush-handbag-fluffy-hat-set.jpeg",
+        gallery: [],
+        videos: [],
+        is_featured: false,
+        created_at: "2026-11-03"
+    },
+    {
+        id: "black-plush-handbag-fluffy-hat-set",
+        name: "Black Plush Handbag and Fluffy Hat Set",
+        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        price: 85,
+        stock: 50,
+        description: "A black plush handbag that comes with a matching fluffy hat.",
+        image: "product/black-plush-handbag-fluffy-hat-set.jpeg",
+        gallery: [],
+        videos: [],
+        is_featured: false,
+        created_at: "2026-11-03"
+    },
+    {
+        id: "hot-pink-plush-handbag-fluffy-hat-set",
+        name: "Hot Pink Plush Handbag and Fluffy Hat Set",
+        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        price: 85,
+        stock: 50,
+        description: "A hot pink plush handbag that comes with a matching fluffy hat.",
+        image: "product/hot-pink-plush-handbag-fluffy-hat-set.jpeg",
+        gallery: [],
+        videos: [],
+        is_featured: false,
+        created_at: "2026-11-03"
+    },
+    {
+        id: "light-pink-plush-handbag-fluffy-hat-set",
+        name: "Light Pink Plush Handbag and Fluffy Hat Set",
+        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        price: 85,
+        stock: 50,
+        description: "A light pink plush handbag that comes with a matching fluffy hat.",
+        image: "product/light-pink-plush-handbag-fluffy-hat-set.jpeg",
+        gallery: [],
+        videos: [],
+        is_featured: false,
+        created_at: "2026-11-03"
+    },
+    {
+        id: "white-plush-handbag-fluffy-hat-set",
+        name: "White Plush Handbag and Fluffy Hat Set",
+        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        price: 85,
+        stock: 50,
+        description: "A white plush handbag that comes with a matching fluffy hat.",
+        image: "product/white-plush-handbag-fluffy-hat-set.jpeg",
+        gallery: [],
+        videos: [],
+        is_featured: false,
+        created_at: "2026-11-03"
+    },
+    {
+        id: "plush-handbag-fluffy-hat-color-collection",
+        name: "Plush Handbag and Fluffy Hat Color Collection",
+        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        price: 85,
+        stock: 50,
+        description: "A collection of plush handbags, each paired with a fluffy hat.",
+        image: "product/plush-handbag-fluffy-hat-color-collection.jpeg",
+        gallery: [],
+        videos: [],
+        is_featured: false,
+        created_at: "2026-11-03"
     }
 ];
 
@@ -239,7 +408,7 @@ const BANNERS = [
         eyebrow: "A LITTLE EVERYDAY LUXURY",
         title: "Find a piece that feels like you.",
         description: "Explore the watch and bracelet set, and browse the collection at Apexmall.",
-        image: "product/ladies-gold-watch-and-bracelet-set.png",
+        image: "product/pearl-crystal-watch-and-bracelet-set.png",
         alt: "Ladies gold watch and bracelet set",
         ctaLabel: "Shop Watches",
         ctaHref: "shop.html?category=Watches"
@@ -267,6 +436,15 @@ const STORIES = [
 
 export async function getProducts() {
     return PRODUCTS;
+}
+
+export function shuffleProducts(products) {
+    const shuffled = [...products];
+    for (let index = shuffled.length - 1; index > 0; index--) {
+        const randomIndex = Math.floor(Math.random() * (index + 1));
+        [shuffled[index], shuffled[randomIndex]] = [shuffled[randomIndex], shuffled[index]];
+    }
+    return shuffled;
 }
 
 export function getProductById(id) {
@@ -475,10 +653,10 @@ async function displayFeaturedProducts() {
     if (!container) return;
 
     const products = await getProducts();
-    const featured = products.filter(product => product.is_featured).slice(0, 8);
+    const featured = shuffleProducts(products.filter(product => product.is_featured)).slice(0, 8);
     renderCards(
         container,
-        featured.length ? featured : products.slice(0, 8),
+        featured.length ? featured : shuffleProducts(products).slice(0, 8),
         "Our product collection is being prepared. Please check back soon."
     );
 }
@@ -490,10 +668,10 @@ async function displayStorefrontCollections() {
 
     const products = await getProducts();
     const newest = [...products].sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
-    renderCards(newContainer, newest.slice(0, 4), "New products are coming soon.");
+    renderCards(newContainer, shuffleProducts(newest).slice(0, 4), "New products are coming soon.");
     renderCards(
         limitedContainer,
-        products.filter(product => product.stock > 0 && product.stock <= 10).slice(0, 4),
+        shuffleProducts(products.filter(product => product.stock > 0 && product.stock <= 10)).slice(0, 4),
         "No limited-stock products at the moment."
     );
 }
