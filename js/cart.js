@@ -1,4 +1,4 @@
-import { formatMoney, getCart, getProductById, getProductsByIds, productImageTag, saveCart, updateCartCount } from "./app.js";
+import { formatMoney, getAvailableStock, getCart, getProductById, getProductsByIds, productImageTag, saveCart, updateCartCount } from "./app.js";
 
 const container = document.getElementById("cart-container");
 
@@ -40,24 +40,36 @@ function renderCartItem(product, quantity) {
     details.append(
         textElement("p", "product-category", typeof product.category === "string" ? product.category : product.category?.name || ""),
         textElement("h3", "", product.name),
-        textElement("p", "", formatMoney(product.price))
+        textElement("p", "", product.pairsPerCarton
+            ? `Carton price: ${formatMoney(product.price)}`
+            : formatMoney(product.price))
     );
+    if (product.pairsPerCarton) {
+        details.append(
+            textElement("p", "pair-price-reference", `Pair price: ${formatMoney(product.pairPrice)} (reference only)`),
+            textElement("p", "wholesale-note", "Wholesale only. Sold by full carton; pairs are not sold individually.")
+        );
+    }
 
     const quantityControls = document.createElement("div");
     quantityControls.className = "cart-quantity";
     const decrease = textElement("button", "quantity-minus", "−");
     decrease.type = "button";
     decrease.dataset.id = product.id;
-    decrease.setAttribute("aria-label", `Remove one ${product.name}`);
-    const count = textElement("span", "", String(quantity));
+    decrease.setAttribute("aria-label", `Remove one ${product.pairsPerCarton ? "carton of " : ""}${product.name}`);
+    const count = textElement("span", "", product.pairsPerCarton
+        ? `${quantity} ${quantity === 1 ? "carton" : "cartons"} (${quantity * product.pairsPerCarton} pairs)`
+        : String(quantity));
     const increase = textElement("button", "quantity-plus", "+");
     increase.type = "button";
     increase.dataset.id = product.id;
-    increase.disabled = quantity >= product.stock;
-    increase.setAttribute("aria-label", `Add one ${product.name}`);
+    increase.disabled = quantity >= getAvailableStock(product);
+    increase.setAttribute("aria-label", `Add one ${product.pairsPerCarton ? "carton of " : ""}${product.name}`);
     quantityControls.append(decrease, count, increase);
 
-    const total = textElement("div", "cart-item-total", formatMoney(product.price * quantity));
+    const total = textElement("div", "cart-item-total", product.pairsPerCarton
+        ? `Carton total: ${formatMoney(product.price * quantity)}`
+        : formatMoney(product.price * quantity));
     const remove = textElement("button", "remove-item", "Remove");
     remove.type = "button";
     remove.dataset.id = product.id;
@@ -82,7 +94,7 @@ async function displayCart() {
         .filter(item => productById.has(item.id))
         .map(item => {
             const product = productById.get(item.id);
-            return { id: item.id, quantity: Math.min(item.quantity, product.stock) };
+            return { id: item.id, quantity: Math.min(item.quantity, getAvailableStock(product)) };
         })
         .filter(item => item.quantity > 0);
 
@@ -153,7 +165,7 @@ async function changeQuantity(productId, amount) {
         }
 
         const quantity = item.quantity + amount;
-        if (quantity > product.stock) return;
+        if (Number.isFinite(product.stock) && quantity > product.stock) return;
 
         if (quantity <= 0) {
             cart.splice(cart.indexOf(item), 1);
