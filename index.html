@@ -5,278 +5,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Apexmall | Shop Online</title>
-
+ 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="home-page">
+    <div class="home-announcement">
+        <span>FRESH FINDS, EASY ORDERING</span>
+        <span>Shop online · Confirm your order with us on WhatsApp</span>
+        <a href="shop.html">Explore the collection <span aria-hidden="true">↗</span></a>
+    </div>
 
-    <!-- ================= HEADER ================= -->
-
-    <header class="header">
-
-        <a href="index.html" class="logo">
-            Apexmall
-        </a>
-
-        <nav class="navigation">
-            <a href="shop.html">Shop</a>
-            <a href="index.html#categories">Categories</a>
-            <a href="index.html#about">About</a>
+    <header class="header home-header" id="top">
+        <a href="index.html" class="logo" aria-label="Apexmall home">Apex<span>mall</span><i>.</i></a>
+        <nav class="navigation" aria-label="Main navigation">
+            <a href="shop.html">Shop all</a>
+            <a href="#categories">Collections</a>
+            <a href="#about">Our story</a>
         </nav>
-
         <div class="header-actions">
-
-            <a href="cart.html" class="cart">
-                Cart
-                <span id="cart-count">0</span>
+            <a href="cart.html" class="cart" aria-label="Shopping cart">
+                <span>Cart</span><span id="cart-count">0</span>
             </a>
-
         </div>
-
     </header>
 
-
-    <!-- ================= HERO ================= -->
-
     <main>
-
-        <section class="hero" aria-label="Featured collections">
-
-            <div class="hero-content">
-
-                <div class="hero-copy" aria-live="off">
-                    <p class="eyebrow" id="hero-eyebrow">NEW COLLECTION</p>
-                    <h1 id="hero-title">Discover products you'll love.</h1>
-                    <p class="hero-description" id="hero-description">
-                        Explore our latest collection and find something made just for you.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="shop.html" class="btn btn-primary" id="hero-cta">Shop Now</a>
-                        <a href="#featured" class="btn btn-secondary">Explore</a>
+        <section class="hero home-hero" aria-label="Featured collections" data-reveal>
+            <div class="hero-copy-panel">
+                <div class="hero-content">
+                    <div class="home-kicker"><span class="home-kicker-dot"></span> HANDPICKED FOR YOUR EVERYDAY</div>
+                    <div class="hero-copy" aria-live="off">
+                        <p class="eyebrow" id="hero-eyebrow">NEW COLLECTION</p>
+                        <h1 id="hero-title">Discover products you'll love.</h1>
+                        <p class="hero-description" id="hero-description">
+                            Thoughtful finds for your everyday. A little detail can change everything.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="shop.html" class="btn btn-primary" id="hero-cta">Shop Now</a>
+                            <a href="#featured" class="btn btn-secondary">Discover more <span aria-hidden="true">↓</span></a>
+                        </div>
+                    </div>
+                    <div class="hero-footnote">
+                        <span class="hero-footnote-mark">A</span>
+                        <span>Curated with care<br><strong>Made for your everyday</strong></span>
                     </div>
                 </div>
             </div>
 
-
             <div class="hero-image" aria-roledescription="carousel" aria-label="Store banners">
-                <img id="hero-image" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=85" alt="Apexmall shopping collection">
+                <img id="hero-image" src="product/banner-watch-collection.png" alt="Apexmall shopping collection">
+                <span class="hero-image-tag">THE NEW EDIT <span aria-hidden="true">✳</span></span>
                 <div class="hero-controls">
                     <button class="hero-arrow" id="hero-previous" type="button" aria-label="Previous banner">‹</button>
                     <div class="hero-dots" id="hero-dots" aria-label="Choose a banner"></div>
                     <button class="hero-arrow" id="hero-next" type="button" aria-label="Next banner">›</button>
                 </div>
             </div>
-
+            <span class="hero-index" aria-hidden="true">01 <i></i> 02</span>
         </section>
 
-        <a class="promo-strip" href="shop.html">
+        <a class="promo-strip home-promo" href="shop.html">
             <span class="promo-strip-label">FRESH FINDS</span>
             <span>Shop selected products and get your order within 2–3 days after placing it.</span>
-            <span class="promo-strip-link">Shop now <span aria-hidden="true">→</span></span>
+            <span class="promo-strip-link">Explore the edit <span aria-hidden="true">↗</span></span>
         </a>
 
-        <section class="stories-section" aria-labelledby="stories-title">
-            <div class="section-heading">
+        <section class="section home-categories" id="categories" data-reveal>
+            <div class="section-heading home-section-heading">
                 <div>
-                    <p class="eyebrow">FROM OUR COMMUNITY</p>
-                    <h2 id="stories-title">Reviews &amp; dispatch updates</h2>
+                    <p class="eyebrow">FIND YOUR SOMETHING</p>
+                    <h2>Good things,<br><em>by category.</em></h2>
                 </div>
+                <p class="section-aside">A considered mix of accessories and everyday essentials, ready to make your own.</p>
             </div>
-            <div class="stories-rail" id="stories-rail" aria-label="Customer reviews and order updates"></div>
+            <div class="categories" id="category-rail" aria-label="Shop by category"></div>
         </section>
 
-
-        <!-- ================= CATEGORIES ================= -->
-
-        <section class="section" id="categories">
-
-            <div class="section-heading">
-
+        <section class="section home-featured" id="featured" data-reveal>
+            <div class="section-heading home-section-heading">
                 <div>
-                    <p class="eyebrow">
-                        SHOP BY CATEGORY
-                    </p>
-
-                    <h2>
-                        Find what you need.
-                    </h2>
+                    <p class="eyebrow">THE APEX EDIT</p>
+                    <h2>Pieces to <em>love.</em></h2>
                 </div>
-
+                <a href="shop.html" class="view-all">Shop everything <span aria-hidden="true">↗</span></a>
             </div>
-
-
-            <div class="categories" id="category-rail">
-                <!-- Categories are built from the local product catalog. -->
-            </div>
-
+            <div class="products" id="featured-products"></div>
         </section>
 
-
-        <!-- ================= FEATURED PRODUCTS ================= -->
-
-        <section class="section" id="featured">
-
-            <div class="section-heading">
-
-                <div>
-
-                    <p class="eyebrow">
-                        FEATURED
-                    </p>
-
-                    <h2>
-                        Best sellers
-                    </h2>
-
-                </div>
-
-                <a href="shop.html" class="view-all">
-                    View all →
-                </a>
-
+        <section class="home-story-band" id="about" data-reveal>
+            <div class="home-story-image">
+                <img src="product/banner-bag-collection.png" alt="A selection of elegant bags from Apexmall" loading="lazy">
+                <span class="home-story-stamp">APEXMALL<br>EST. WITH CARE</span>
             </div>
-
-
-            <div class="products" id="featured-products">
-
-                <!-- Products will be inserted by JavaScript -->
-
+            <div class="home-story-copy">
+                <p class="eyebrow">A MORE PERSONAL WAY TO SHOP</p>
+                <h2>Little things.<br><em>Lovely details.</em></h2>
+                <p>Apexmall is for the pieces that make an outfit, the gifts that feel just right, and the everyday finds you reach for again and again.</p>
+                <a class="home-text-link" href="shop.html">Get to know the collection <span aria-hidden="true">→</span></a>
+                <div class="home-story-note"><span>01</span> Thoughtfully selected. Always personal.</div>
             </div>
-
         </section>
 
-        <section class="section" id="new-arrivals">
-            <div class="section-heading">
+        <section class="section home-new" id="new-arrivals" data-reveal>
+            <div class="section-heading home-section-heading">
                 <div>
-                    <p class="eyebrow">JUST IN</p>
-                    <h2>New arrivals</h2>
+                    <p class="eyebrow">JUST LANDED</p>
+                    <h2>New to the <em>edit.</em></h2>
                 </div>
-                <a href="shop.html?sort=newest" class="view-all">Shop new →</a>
+                <a href="shop.html?sort=newest" class="view-all">See new arrivals <span aria-hidden="true">↗</span></a>
             </div>
             <div class="products" id="new-products"></div>
         </section>
 
-        <section class="section" id="limited-stock">
-            <div class="section-heading">
+        <section class="home-community" data-reveal>
+            <div class="home-community-heading">
                 <div>
-                    <p class="eyebrow">LIMITED STOCK</p>
-                    <h2>Moving quickly</h2>
+                    <p class="eyebrow">A LITTLE LOVE FROM YOU</p>
+                    <h2>Real moments,<br><em>real happy mail.</em></h2>
                 </div>
+                <p>Tap a story to see a little more from our community.</p>
             </div>
-            <div class="products" id="limited-products"></div>
+            <div class="stories-section" aria-label="Customer reviews and order updates">
+                <div class="stories-rail" id="stories-rail" aria-label="Customer reviews and order updates"></div>
+            </div>
         </section>
 
-
-        <!-- ================= ABOUT ================= -->
-
-        <section class="about section" id="about">
-
-            <div class="about-content">
-
-                <p class="eyebrow">
-                    OUR STORY
-                </p>
-
-                <h2>
-                    More than just
-                    an online store.
-                </h2>
-
-                <p>
-                    Apexmall makes online shopping feel personal,
-                    practical, and dependable. We curate useful,
-                    well-presented products, keep checkout simple,
-                    and stay available when you need help.
-                </p>
-
+        <section class="section home-limited" id="limited-stock" data-reveal>
+            <div class="home-limited-card">
+                <div class="section-heading home-section-heading">
+                    <div>
+                        <p class="eyebrow">DON'T WAIT TOO LONG</p>
+                        <h2>On their way <em>out.</em></h2>
+                    </div>
+                    <span class="limited-seal" aria-hidden="true">FEW<br>LEFT<br>✳</span>
+                </div>
+                <div class="products" id="limited-products"></div>
             </div>
-
         </section>
 
-
+        <section class="home-last-call" data-reveal>
+            <span class="home-last-call-flower" aria-hidden="true">✳</span>
+            <p class="eyebrow">YOUR NEXT FAVOURITE IS HERE</p>
+            <h2>A good find<br>is a <em>feeling.</em></h2>
+            <a href="shop.html" class="btn btn-primary">Find your something <span aria-hidden="true">↗</span></a>
+        </section>
     </main>
 
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer class="footer">
-
+    <footer class="footer home-footer">
         <div class="footer-brand">
-
-            <h3>
-                Apexmall
-            </h3>
-
-            <p>
-                Quality products.
-                Exceptional experience.
-            </p>
-
+            <h3>Apexmall<span>.</span></h3>
+            <p>Quality products.<br>Exceptional experience.</p>
         </div>
-
-
         <div class="footer-links">
-
-            <h4>
-                Shop
-            </h4>
-
-            <a href="shop.html">
-                All Products
-            </a>
-
-            <a href="#featured">
-                Best Sellers
-            </a>
-
+            <h4>Shop</h4>
+            <a href="shop.html">All products</a>
+            <a href="#featured">The Apex edit</a>
+            <a href="#categories">Categories</a>
         </div>
-
-
         <div class="footer-links">
-
-            <h4>
-                Help
-            </h4>
-
-            <a href="policies.html#contact">
-                Contact Us
-            </a>
-            <a href="https://wa.me/233597323795" target="_blank" rel="noopener">
-                Product Enquiry
-            </a>
-
-            <a href="policies.html#delivery">
-                Delivery
-            </a>
-
-            <a href="policies.html#returns">
-                Returns
-            </a>
-
+            <h4>Help</h4>
+            <a href="policies.html#contact">Contact us</a>
+            <a href="https://wa.me/233597323795" target="_blank" rel="noopener">Product enquiry</a>
+            <a href="policies.html#delivery">Delivery &amp; returns</a>
         </div>
-
-
         <div class="footer-links">
-
-            <h4>
-                Follow Us
-            </h4>
-
-            <a href="https://www.tiktok.com/@apex.mall" target="_blank" rel="noopener">
-                TikTok
-            </a>
-
-            <a href="https://wa.me/233597323795" target="_blank" rel="noopener">
-                WhatsApp
-            </a>
-
+            <h4>Follow along</h4>
+            <a href="https://www.tiktok.com/@apex.mall" target="_blank" rel="noopener">TikTok ↗</a>
+            <a href="https://wa.me/233597323795" target="_blank" rel="noopener">WhatsApp ↗</a>
         </div>
-
+        <div class="home-footer-bottom"><span>© Apexmall</span><span>Made for your everyday.</span><a href="#top">Back to top ↑</a></div>
     </footer>
 
-
     <script type="module" src="js/app.js"></script>
-
 </body>
 </html>
