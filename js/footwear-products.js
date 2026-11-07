@@ -1,4 +1,4 @@
-export const FOOTWEAR_PRODUCTS = [
+const FOOTWEAR_LISTINGS = [
     {
         "id": "footwear-0169b",
         "name": "0169B",
@@ -388,7 +388,7 @@ export const FOOTWEAR_PRODUCTS = [
         "name": "JN158A",
         "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1560,
-        "sizeRange": "48-45",
+        "sizeRange": "40-45",
         "pairsPerCarton": 24,
         "cartonPrice": 1560,
         "description": "Sizes 48-45. Sold by full carton only (24 pairs per carton).",
@@ -1409,3 +1409,107 @@ export const FOOTWEAR_PRODUCTS = [
         "pairPrice": 165
     }
 ];
+
+const FOOTWEAR_DETAILS = {
+    "footwear-0169b": { name: "Black Bow-Detail Ballet Flats", description: "Black flat shoes with a rounded toe and a decorative bow across the front." },
+    "footwear-yd87b": { name: "Men's Padded Slip-On Slides", description: "Open-back slides with a wide, softly contoured upper and cushioned-looking footbed; the product photo shows black, grey, brown, and olive options." },
+    "footwear-zp07": { name: "Men's Double-Band Buckle Sandals", description: "Open-toe sandals with two broad adjustable-look straps and metal-tone buckle details; several dark and earth-tone colorways are pictured." },
+    "footwear-86-34": { name: "Men's Double-Buckle Casual Sandals", description: "Open-toe sandals with two broad buckle straps and a flat, textured-looking sole; the product image shows brown, black, and tan options." },
+    "footwear-jn171d": { name: "Children's Lace-Up Ankle Boots", description: "Ankle-height lace-up boots with a sturdy-looking sole; black, brown, tan, and olive color options are shown." },
+    "footwear-jn171e": { name: "Children's Lace-Up Ankle Boots", description: "Ankle-height lace-up boots with a sturdy-looking sole; the pictured colors include black, brown, tan, and olive." },
+    "footwear-jn177c": { name: "Children's Black High-Top Lace-Up Shoes", description: "Black ankle-height shoes with a lace-up front, padded-looking collar, and substantial treaded sole." },
+    "footwear-501c": { name: "Children's Black Bow-Front Mary Jane Shoes", description: "Glossy black Mary Jane-style shoes with a rounded toe, front strap, and chunky treaded sole." },
+    "footwear-501d": { name: "Children's Black Bow-Front Mary Jane Shoes", description: "Glossy black Mary Jane-style shoes with a rounded toe, front strap, and chunky treaded sole." },
+    "footwear-501e": { name: "Children's Black Bow-Front Mary Jane Shoes", description: "Glossy black Mary Jane-style shoes with a rounded toe, front strap, and chunky treaded sole." },
+    "footwear-b26-2b": { name: "Black Knit-Look Slip-On Trainers", description: "Black low-top trainers with a textured knit-look upper, elastic-lace appearance, and a dotted tread pattern." },
+    "footwear-092c": { name: "Children's Black Knit-Look Slip-On Shoes", description: "Black low-top shoes with a flexible-looking knit upper, slip-on profile, and a simple rounded toe." },
+    "footwear-092d": { name: "Children's Black Knit-Look Slip-On Shoes", description: "Black low-top shoes with a flexible-looking knit upper, slip-on profile, and a simple rounded toe." },
+    "footwear-092e": { name: "Children's Black Knit-Look Slip-On Shoes", description: "Black low-top shoes with a flexible-looking knit upper, slip-on profile, and a simple rounded toe." },
+    "footwear-7107c": { name: "Children's Color-Block High-Top Sneakers", description: "High-top sneakers with contrast panels, lace-up fronts, and a flat-looking sole; red, grey, black, and blue versions are pictured." },
+    "footwear-1012-8c": { name: "Children's Black Double-Strap Sport Sandals", description: "Black open-toe sandals with two adjustable-look hook-and-loop straps and a thick, ridged sole." },
+    "footwear-7100c": { name: "Children's Black Perforated Low-Top Sneakers", description: "Black lace-up sneakers with perforation-style toe detailing, a low-cut profile, and a chunky sole." },
+    "footwear-7100d": { name: "Children's Black Perforated Low-Top Sneakers", description: "Black lace-up sneakers with perforation-style toe detailing, a low-cut profile, and a chunky sole." },
+    "footwear-7101c": { name: "Children's White Perforated Low-Top Sneakers", description: "All-white lace-up sneakers with perforation-style toe detailing, a low-cut profile, and a chunky sole." },
+    "footwear-7101d": { name: "Children's White Perforated Low-Top Sneakers", description: "All-white lace-up sneakers with perforation-style toe detailing, a low-cut profile, and a chunky sole." },
+    "footwear-7101e": { name: "Children's White Perforated Low-Top Sneakers", description: "All-white lace-up sneakers with perforation-style toe detailing, a low-cut profile, and a chunky sole." },
+    "footwear-0169c": { name: "Black Bow-Detail Ballet Flats", description: "Black ballet-style flats with a rounded toe and bow detail; the product photo also shows the textured outsole." },
+    "footwear-jn167a": { name: "Two-Tone Canvas-Look Low-Top Sneakers", description: "Low-top lace-up sneakers with a rounded contrast toe and light sole; navy, brown, and blue colorways are pictured." },
+    "footwear-jn179a": { name: "Chunky Color-Panel Running Sneakers", description: "Lace-up running-style sneakers with a layered, chunky sole and contrasting side panels; grey, black, and olive versions are shown." },
+    "footwear-jn158a": { name: "Black High-Top Lace-Up Trainers", description: "Black ankle-height trainers with a lace-up front, panelled upper, and a deep, rugged-looking sole." },
+    "footwear-661b": { name: "Black Low-Top Lace-Up Sneakers", description: "Classic black low-top lace-up sneakers with a smooth-looking upper and flat sole. Nike text is visible on the accompanying product image; this describes the image marking only and does not verify authenticity." },
+    "footwear-662b": { name: "Black Low-Top Lace-Up Sneakers", description: "Classic black low-top lace-up sneakers with a smooth-looking upper and flat sole. Nike text is visible on the accompanying product image; this describes the image marking only and does not verify authenticity." },
+    "footwear-w26-1b": { name: "White Low-Top Lace-Up Sneakers", description: "Clean white low-top sneakers with a lace-up front, rounded toe, and matching white sole." },
+    "footwear-jn175e": { name: "Children's Black Knit-Look Slip-On Sneakers", description: "Black low-top slip-on sneakers with a knit-look upper, rounded toe, and flexible-looking sole." },
+    "footwear-jn175c": { name: "Children's Black Knit-Look Slip-On Sneakers", description: "Black low-top slip-on sneakers with a knit-look upper, rounded toe, and flexible-looking sole." },
+    "footwear-jn175d": { name: "Children's Black Knit-Look Slip-On Sneakers", description: "Black low-top slip-on sneakers with a knit-look upper, rounded toe, and flexible-looking sole." },
+    "footwear-jn175b": { name: "Children's Black Knit-Look Slip-On Sneakers", description: "Black low-top slip-on sneakers with a knit-look upper, rounded toe, and flexible-looking sole." },
+    "footwear-jn161e": { name: "Children's Chunky Black Slip-On Sneakers", description: "Black slip-on sneakers with a sculpted, chunky sole and a textured-looking upper." },
+    "footwear-97005c": { name: "Children's Black Chunky Loafers", description: "Black slip-on shoes with a loafer-style upper, low profile, and pronounced lug-style tread." },
+    "footwear-720a": { name: "High-Top Sneakers with Star Side Patches", description: "Lace-up high-tops with contrast panels, a star-shaped side patch, and a flat-looking sole; red, white, black, and blue pairs are pictured." },
+    "footwear-720b": { name: "High-Top Sneakers with Star Side Patches", description: "Lace-up high-tops with contrast panels, a star-shaped side patch, and a flat-looking sole; red, white, black, and blue pairs are pictured." },
+    "footwear-731b": { name: "Color-Block Low-Top Sport Sneakers", description: "Low-top lace-up sneakers with contrast side panels and a simple flat sole; blue, black, and red colorways are shown." },
+    "footwear-97100": { name: "Black Three-Stripe Slide Sandals", description: "Black open-toe slide sandals with three contrasting stripes across the broad upper and a textured outsole." },
+    "footwear-jn183c": { name: "Children's Multi-Strap Sport Sandals", description: "Open-toe sandals with multiple supportive-looking straps and a substantial sole; black, brown, grey, and blue versions are pictured." },
+    "footwear-663": { name: "Color-Block High-Top Sneakers with Nike Marking", description: "High-top lace-up sneakers with contrasting panels and a star-style side detail; black, red, and blue colorways are pictured. A Nike wordmark and swoosh appear in the product image, which does not verify authenticity." },
+    "footwear-701a": { name: "Color-Block Low-Top Lace-Up Sneakers", description: "Low-top sneakers with a contrast toe, side panels, and lace-up front; red, grey, black, and blue versions are shown." },
+    "footwear-701b": { name: "Color-Block Low-Top Lace-Up Sneakers", description: "Low-top sneakers with a contrast toe, side panels, and lace-up front; red, grey, black, and blue versions are shown." },
+    "footwear-jn166b": { name: "Children's Color-Panel High-Top Sneakers", description: "Ankle-height lace-up sneakers with bold contrast panels; black-and-white, blue, red, and multicolor versions are pictured." },
+    "footwear-983-3a": { name: "Men's Striped Slide Sandals", description: "Open-toe slide sandals with broad striped uppers and a molded-looking footbed; black, olive, and two-tone options appear in the image." },
+    "footwear-661w": { name: "White Low-Top Lace-Up Sneakers", description: "White low-top lace-up sneakers with a rounded toe and flat sole. Nike text is visible on the accompanying product image; this describes the image marking only and does not verify authenticity." },
+    "footwear-662w": { name: "White Low-Top Lace-Up Sneakers", description: "White low-top lace-up sneakers with a rounded toe and flat sole. Nike text is visible on the accompanying product image; this describes the image marking only and does not verify authenticity." },
+    "footwear-23519": { name: "Women's Double-Strap Flat Sandals", description: "Flat open-toe sandals with two broad straps and small buckle-style details; black and brown pairs are shown." },
+    "footwear-2505": { name: "Men's Everyday Thong Sandals", description: "Simple toe-post sandals with broad straps and flat soles; the product photo shows black, brown, grey, and green pairs." },
+    "footwear-5816": { name: "Men's Wide-Band Slide Sandals", description: "Open-toe slides with a single broad upper and flat footbed; black, brown, grey, and green options are pictured." },
+    "footwear-5915": { name: "Men's Striped-Band Slide Sandals", description: "Open-toe slides with a single band featuring contrasting stripe details; green, black, red, and orange styles are pictured." },
+    "footwear-5913": { name: "Men's Double-Band Slide Sandals", description: "Open-toe slides with two contrast-striped bands; the product photo shows green, black, orange, and red colorways." },
+    "footwear-5912": { name: "Men's Minimal Double-Strap Sandals", description: "Open-toe sandals with two simple broad straps and a flat sole; black, olive, and brown options are pictured." },
+    "footwear-6065": { name: "Men's Two-Stripe Slide Sandals", description: "Black open-toe slides with two contrast stripes across the upper and a textured-looking footbed." },
+    "footwear-99321": { name: "Men's Wide-Band Slide Sandals", description: "Open-toe slides with a broad, clean upper and flat sole; black and orange pairs are shown." },
+    "footwear-35054": { name: "Men's Double-Buckle Sandals", description: "Open-toe sandals with two broad adjustable-look straps and metal-tone buckle details; black and brown pairs are pictured." },
+    "footwear-2999": { name: "Men's Black Embellished Thong Sandals", description: "Black toe-post sandals with a broad textured upper and small gold-tone decorative accents." },
+    "footwear-86021": { name: "Men's Black Textured Thong Sandals", description: "Black toe-post sandals with a simple textured strap, contoured-looking footbed, and dotted outsole." },
+    "footwear-1180": { name: "Women's Black Trimmed Slide Sandals", description: "Black open-toe slides with a broad upper decorated with contrasting green, red, and gold-tone bands." },
+    "footwear-1181": { name: "Women's Double-Buckle Slide Sandals", description: "Flat open-toe sandals with two broad buckle straps; the photo shows black, tan, and muted neutral options." },
+    "footwear-1182": { name: "Women's Embellished Toe-Post Sandals", description: "Flat black toe-post sandals with a decorative metallic-look accent at the strap junction." },
+    "footwear-1183": { name: "Women's Double-Buckle Slide Sandals", description: "Open-toe slides with two broad straps and metal-tone buckle details, shown with a warm tan footbed." },
+    "footwear-1185": { name: "Women's Black Minimal Toe-Post Sandals", description: "Lightweight-looking black toe-post sandals with a simple upper and textured outsole." },
+    "footwear-jn162d": { name: "Children's Color-Panel Sport Sneakers", description: "Low-top sporty shoes with bright contrast panels and a rounded toe; neon green, pink, red, and black colorways are pictured." },
+    "footwear-jn162e": { name: "Children's Color-Panel Sport Sneakers", description: "Low-top sporty shoes with bright contrast panels and a rounded toe; neon green, pink, red, and black colorways are pictured." },
+    "footwear-jn163e": { name: "Children's Multi-Color Low-Top Sneakers", description: "Low-top shoes with contrast overlays and a simple sole; black, gold, red, and white versions are shown." },
+    "footwear-jn160b": { name: "Color-Panel Outdoor Lace-Up Sneakers", description: "Lace-up low-top shoes with textured panels and a sturdy-looking tread; olive, black, and tan-orange colorways appear in the photo." },
+    "footwear-jn91a": { name: "Black-and-White Stripe Low-Top Sneakers", description: "Low-top lace-up sneakers with contrasting side stripes and a flat sole; black-and-white versions are pictured." },
+    "footwear-jn103a": { name: "Lace-Up Ankle Work Boots", description: "Ankle-height boots with lace-up fronts, padded-looking collars, and rugged soles; black and tan options are shown." },
+    "footwear-jn209a": { name: "Colorful Graphic High-Top Sneakers", description: "High-top lace-up sneakers with bold multicolor panels and a contrasting sole; green-red, blue-red, and orange-blue designs are pictured." },
+    "footwear-zp02": { name: "Men's Wide-Band Slide Sandals", description: "Minimal open-toe slides with a single broad upper and flat sole; black and olive pairs are pictured." },
+    "footwear-zp06": { name: "Men's Double-Band Buckle Sandals", description: "Open-toe sandals with two broad buckle straps and a flat sole; dark green, brown, burgundy, and black options are shown." },
+    "footwear-6331b": { name: "Women's Black Embellished Strap Sandals", description: "Black flat sandals with a decorative textured accent across the forefoot and an ankle strap with buckle closure." },
+    "footwear-61192": { name: "Women's Double-Strap Ring-Detail Sandals", description: "Flat sandals with two narrow straps and circular metal-tone accents; black and brown pairs are shown." },
+    "footwear-97011b": { name: "Color-Panel Low-Top Casual Sneakers", description: "Low-top lace-up shoes with a rounded toe and contrast sole; olive, black, and tan-orange pairs are pictured." },
+    "footwear-97013a": { name: "Black Chunky Running Sneakers", description: "All-black lace-up running-style shoes with a layered upper and deep, textured-looking sole." },
+    "footwear-97016d": { name: "Children's Color-Block Hook-and-Loop Sneakers", description: "Low-top shoes with a hook-and-loop style fastening, contrast panels, and a flat sole; black, white, blue, and multicolor pairs are pictured." },
+    "footwear-97016c": { name: "Children's Color-Block Hook-and-Loop Sneakers", description: "Low-top shoes with a hook-and-loop style fastening, contrast panels, and a flat sole; black, white, blue, and multicolor pairs are pictured." },
+    "footwear-23522": { name: "Women's Ring-Detail Flat Sandals", description: "Flat open-toe sandals with slim straps and circular metallic-look details; black and brown pairs are shown." },
+    "footwear-yd80b": { name: "Men's Double-Buckle Slide Sandals", description: "Open-toe slides with two adjustable-look buckle straps and a broad footbed; tan, olive, brown, and black versions appear in the image." },
+    "footwear-yd88b": { name: "Men's Double-Buckle Slide Sandals", description: "Open-toe slides with two broad buckle straps and a simple flat sole; olive, tan, brown, and black pairs are pictured." },
+    "footwear-yd77b": { name: "Men's Double-Buckle Slide Sandals", description: "Open-toe slides with two broad buckle straps and a textured-looking footbed; black and neutral colorways are shown." },
+    "footwear-7312": { name: "Men's Double-Strap Sport Slides", description: "Open-toe slides with two broad crossing straps and a simple flat sole, shown in a warm tan-orange color." },
+    "footwear-7911c": { name: "Children's Multi-Strap Sport Sandals", description: "Open-toe sandals with adjustable-look straps and a rugged sole; black, brown, grey, and blue colorways are pictured." },
+    "footwear-7911d": { name: "Children's Multi-Strap Sport Sandals", description: "Open-toe sandals with adjustable-look straps and a rugged sole; black, brown, grey, and blue colorways are pictured." },
+    "footwear-7911e": { name: "Children's Multi-Strap Sport Sandals", description: "Open-toe sandals with adjustable-look straps and a rugged sole; black, brown, grey, and blue colorways are pictured." },
+    "footwear-10061": { name: "Lace-Up Work Boots", description: "Ankle-height work boots with lace-up fronts, reinforced-looking toe panels, and rugged tread. Multiple colors are pictured; the image notes one color per carton." },
+    "footwear-1089": { name: "High-Top Work Boots", description: "High-cut lace-up boots with padded-looking collars and rugged soles, shown in black, tan, and brown colorways. The image notes one color per carton." },
+    "footwear-6963": { name: "Black Rugged Lace-Up Boots", description: "All-black ankle boots with a high padded-looking collar, lace-up front, and thick deeply treaded sole." }
+};
+
+export const FOOTWEAR_PRODUCTS = FOOTWEAR_LISTINGS.map(product => {
+    const details = FOOTWEAR_DETAILS[product.id];
+    if (!details) {
+        throw new Error(`Missing footwear details for ${product.id}`);
+    }
+
+    return {
+        ...product,
+        name: `${details.name} (${product.name})`,
+        description: `${details.description} Sizes ${product.sizeRange}. Sold by full carton only: ${product.pairsPerCarton} pairs per carton at ${product.pairPrice} per pair; carton total ${product.cartonPrice}.`
+    };
+});
