@@ -1,4 +1,4 @@
-import { createWhatsAppUrl, formatMoney, getCart, getProductsByIds, productImageTag, saveCart, updateCartCount } from "./app.js";
+import { createWhatsAppUrl, formatMoney, getAvailableStock, getCart, getProductsByIds, productImageTag, saveCart, updateCartCount } from "./app.js";
 
 const form = document.getElementById("checkout-form");
 const itemsContainer = document.getElementById("checkout-items");
@@ -28,7 +28,7 @@ async function loadCheckout() {
         .filter(item => productById.has(item.id))
         .map(item => {
             const product = productById.get(item.id);
-            return { product, quantity: Math.min(item.quantity, product.stock) };
+            return { product, quantity: Math.min(item.quantity, getAvailableStock(product)) };
         })
         .filter(item => item.quantity > 0);
 
@@ -58,11 +58,24 @@ async function loadCheckout() {
         const name = document.createElement("strong");
         name.textContent = product.name;
         const count = document.createElement("span");
-        count.textContent = `Quantity: ${quantity}`;
+        count.textContent = product.pairsPerCarton
+            ? `Quantity: ${quantity} ${quantity === 1 ? "carton" : "cartons"} (${quantity * product.pairsPerCarton} pairs)`
+            : `Quantity: ${quantity}`;
         details.append(name, count);
+        if (product.pairsPerCarton) {
+            const pairPrice = document.createElement("span");
+            pairPrice.className = "pair-price-reference";
+            pairPrice.textContent = `Pair price: ${formatMoney(product.pairPrice)} (reference only)`;
+            const wholesaleNote = document.createElement("span");
+            wholesaleNote.className = "wholesale-note";
+            wholesaleNote.textContent = "Wholesale only; full cartons only, no individual pairs.";
+            details.append(pairPrice, wholesaleNote);
+        }
 
         const lineTotal = document.createElement("strong");
-        lineTotal.textContent = formatMoney(product.price * quantity);
+        lineTotal.textContent = product.pairsPerCarton
+            ? `Carton total: ${formatMoney(product.price * quantity)}`
+            : formatMoney(product.price * quantity);
         item.append(image, details, lineTotal);
         itemsContainer.appendChild(item);
     });
@@ -78,10 +91,15 @@ async function loadCheckout() {
         const enquiry = document.getElementById("order-enquiry").value.trim();
 
         const lines = orderLines.map(({ product, quantity }) =>
-            `- ${quantity} x ${product.name} (${formatMoney(product.price * quantity)})`
+            `- ${quantity}${product.pairsPerCarton
+                ? ` ${quantity === 1 ? "carton" : "cartons"} (${quantity * product.pairsPerCarton} pairs; pair price ${formatMoney(product.pairPrice)} is reference only, full cartons only)`
+                : ""} x ${product.name} (${formatMoney(product.price * quantity)})`
         );
         const orderMessage = [
             "Hello Apexmall, I would like to place an order:",
+            ...(orderLines.some(line => line.product.pairsPerCarton)
+                ? ["Footwear is wholesale only and sold by full carton; individual pairs are not sold."]
+                : []),
             "",
             ...lines,
             "",
