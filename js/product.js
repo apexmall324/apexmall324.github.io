@@ -1,4 +1,4 @@
-import { addToCart, createProductCard, formatMoney, getCart, getProductById, getProducts, productEnquiryUrl, productImageTag, updateCartCount } from "./app.js";
+import { addToCart, createProductCard, formatMoney, getAvailableStock, getCart, getProductById, getProducts, productEnquiryUrl, productImageTag, shuffleProducts, updateCartCount } from "./app.js";
 
 const productDetail = document.getElementById("product-detail");
 const relatedContainer = document.getElementById("related-products");
@@ -32,17 +32,87 @@ function renderProduct(product) {
     media.className = "product-detail-image";
     const imageContainer = document.createElement("div");
     imageContainer.className = "product-image";
-    imageContainer.appendChild(productImageTag(product));
+    const imagePaths = [...new Set([product.image, ...(product.gallery || [])].filter(Boolean))];
+    let activeImageIndex = 0;
+    const mainImage = productImageTag({
+        ...product,
+        image: imagePaths[activeImageIndex]
+    });
+    imageContainer.appendChild(mainImage);
+
+    const imageControls = document.createElement("div");
+    imageControls.className = "product-image-controls";
+    imageControls.setAttribute("aria-label", "Product image controls");
+
+    const previousImage = document.createElement("button");
+    previousImage.type = "button";
+    previousImage.className = "product-image-arrow";
+    previousImage.setAttribute("aria-label", "Previous product image");
+    previousImage.textContent = "‹";
+
+    const nextImage = document.createElement("button");
+    nextImage.type = "button";
+    nextImage.className = "product-image-arrow";
+    nextImage.setAttribute("aria-label", "Next product image");
+    nextImage.textContent = "›";
+
+    const imageIndicator = document.createElement("span");
+    imageIndicator.className = "product-image-indicator";
+    imageIndicator.setAttribute("aria-live", "polite");
+
+    function showImage(index) {
+        activeImageIndex = (index + imagePaths.length) % imagePaths.length;
+        mainImage.src = imagePaths[activeImageIndex];
+        mainImage.alt = `${product.name}, image ${activeImageIndex + 1} of ${imagePaths.length}`;
+        imageIndicator.textContent = `${activeImageIndex + 1} / ${imagePaths.length}`;
+        gallery.querySelectorAll(".product-gallery-thumb").forEach((button, buttonIndex) => {
+            button.setAttribute("aria-pressed", String(buttonIndex === activeImageIndex));
+        });
+    }
+
+    previousImage.addEventListener("click", () => showImage(activeImageIndex - 1));
+    nextImage.addEventListener("click", () => showImage(activeImageIndex + 1));
+    imageControls.append(previousImage, imageIndicator, nextImage);
+    if (imagePaths.length > 1) {
+        imageContainer.appendChild(imageControls);
+    }
     media.appendChild(imageContainer);
 
-    if (product.gallery?.length) {
-        const gallery = document.createElement("div");
+    let gallery = null;
+    if (imagePaths.length > 1) {
+        gallery = document.createElement("div");
         gallery.className = "product-gallery";
-        [product.image, ...product.gallery].filter(Boolean).forEach(path => {
-            const image = productImageTag({ image: path, name: product.name });
-            gallery.appendChild(image);
+        imagePaths.forEach((path, index) => {
+            const thumbnail = document.createElement("button");
+            thumbnail.type = "button";
+            thumbnail.className = "product-gallery-thumb";
+            thumbnail.setAttribute("aria-label", `Show product image ${index + 1}`);
+            thumbnail.setAttribute("aria-pressed", String(index === activeImageIndex));
+            const image = productImageTag({ image: path, name: `${product.name}, image ${index + 1}` });
+            thumbnail.appendChild(image);
+            thumbnail.addEventListener("click", () => showImage(index));
+            gallery.appendChild(thumbnail);
         });
         media.appendChild(gallery);
+        showImage(activeImageIndex);
+
+        let pointerStart = null;
+        imageContainer.addEventListener("pointerdown", event => {
+            if (event.pointerType !== "touch") return;
+            pointerStart = { id: event.pointerId, x: event.clientX, y: event.clientY };
+        });
+        window.addEventListener("pointerup", event => {
+            if (!pointerStart || event.pointerType !== "touch" || pointerStart.id !== event.pointerId) return;
+            const deltaX = event.clientX - pointerStart.x;
+            const deltaY = event.clientY - pointerStart.y;
+            pointerStart = null;
+            if (Math.abs(deltaX) > 40 && Math.abs(deltaX) > Math.abs(deltaY)) {
+                showImage(activeImageIndex + (deltaX < 0 ? 1 : -1));
+            }
+        });
+        window.addEventListener("pointercancel", () => {
+            pointerStart = null;
+        });
     }
 
     if (product.videos?.length) {
@@ -74,7 +144,25 @@ function renderProduct(product) {
 
     const price = document.createElement("div");
     price.className = "product-detail-price";
-    price.textContent = formatMoney(product.price);
+    price.textContent = product.pairsPerCarton
+        ? `Carton price: ${formatMoney(product.price)}`
+        : formatMoney(product.price);
+
+    const pairPrice = product.pairsPerCarton
+        ? document.createElement("p")
+        : null;
+    if (pairPrice) {
+        pairPrice.className = "pair-price-reference";
+        pairPrice.textContent = `Pair price: ${formatMoney(product.pairPrice)} (reference only; pairs are not sold individually)`;
+    }
+
+    const wholesaleNote = product.pairsPerCarton
+        ? document.createElement("p")
+        : null;
+    if (wholesaleNote) {
+        wholesaleNote.className = "wholesale-note";
+        wholesaleNote.textContent = "Wholesale only. Add to cart and order by full carton; the carton price is charged.";
+    }
 
     const description = document.createElement("div");
     description.className = "product-description";
@@ -82,22 +170,28 @@ function renderProduct(product) {
 
     const inCart = getCart()
         .find(item => item.id === product.id)?.quantity || 0;
-    const available = Math.max(0, product.stock - inCart);
+    const available = getAvailableStock(product, inCart);
     const stock = document.createElement("div");
     stock.className = "stock";
     stock.textContent = available > 0 ? `${available} available` : "Out of stock";
 
     const quantitySelector = document.createElement("div");
     quantitySelector.className = "quantity-selector";
+    if (product.pairsPerCarton) {
+        const quantityLabel = document.createElement("span");
+        quantityLabel.className = "quantity-unit";
+        quantityLabel.textContent = "Cartons";
+        quantitySelector.appendChild(quantityLabel);
+    }
     const minus = document.createElement("button");
     minus.type = "button";
-    minus.setAttribute("aria-label", "Decrease quantity");
+    minus.setAttribute("aria-label", `Decrease ${product.pairsPerCarton ? "carton" : "quantity"}`);
     minus.textContent = "−";
     const quantityDisplay = document.createElement("span");
     quantityDisplay.textContent = "1";
     const plus = document.createElement("button");
     plus.type = "button";
-    plus.setAttribute("aria-label", "Increase quantity");
+    plus.setAttribute("aria-label", `Increase ${product.pairsPerCarton ? "carton" : "quantity"}`);
     plus.textContent = "+";
     quantitySelector.append(minus, quantityDisplay, plus);
 
@@ -116,16 +210,20 @@ function renderProduct(product) {
     addButton.type = "button";
     addButton.className = "btn btn-primary product-add-button";
     addButton.disabled = available <= 0;
-    addButton.textContent = available > 0 ? "Add to Cart" : "Out of Stock";
+    addButton.textContent = available > 0
+        ? product.pairsPerCarton ? "Add Carton to Cart" : "Add to Cart"
+        : "Out of Stock";
     addButton.addEventListener("click", () => {
         if (addToCart(product.id, quantity)) {
             quantity = 1;
             quantityDisplay.textContent = "1";
-            const newAvailable = Math.max(0, product.stock - (getCart()
-                .find(item => item.id === product.id)?.quantity || 0));
+            const newAvailable = getAvailableStock(product, getCart()
+                .find(item => item.id === product.id)?.quantity || 0);
             stock.textContent = newAvailable > 0 ? `${newAvailable} available` : "Out of stock";
             addButton.disabled = newAvailable <= 0;
-            addButton.textContent = newAvailable > 0 ? "Add to Cart" : "Out of Stock";
+            addButton.textContent = newAvailable > 0
+                ? product.pairsPerCarton ? "Add Carton to Cart" : "Add to Cart"
+                : "Out of Stock";
         }
     });
 
@@ -141,7 +239,34 @@ function renderProduct(product) {
     enquiry.rel = "noopener";
     enquiry.textContent = "Ask about this product on WhatsApp";
 
-    content.append(category, name, price, description, stock, quantitySelector, addButton, viewCart, enquiry);
+    const productDetails = [];
+    if (product.sizeRange) {
+        productDetails.push(`Sizes: ${product.sizeRange}`);
+    }
+    if (product.pairsPerCarton) {
+        productDetails.push(`Pairs per carton: ${product.pairsPerCarton}`);
+    }
+    const detailElements = productDetails.map(text => {
+        const detail = document.createElement("p");
+        detail.className = "product-description";
+        detail.textContent = text;
+        return detail;
+    });
+
+    content.append(
+        category,
+        name,
+        price,
+        ...(pairPrice ? [pairPrice] : []),
+        ...(wholesaleNote ? [wholesaleNote] : []),
+        ...(!product.pairsPerCarton ? [description] : []),
+        ...(Number.isFinite(product.stock) ? [stock] : []),
+        ...detailElements,
+        quantitySelector,
+        addButton,
+        viewCart,
+        enquiry
+    );
     layout.append(media, content);
     productDetail.replaceChildren(layout);
 }
@@ -158,9 +283,9 @@ async function init() {
     renderProduct(product);
 
     const products = await getProducts();
-    const related = products.filter(item =>
+    const related = shuffleProducts(products.filter(item =>
         categoryName(item) === categoryName(product) && item.id !== product.id
-    ).slice(0, 4);
+    )).slice(0, 4);
     relatedContainer.replaceChildren();
     related.forEach(item => relatedContainer.appendChild(createProductCard(item)));
     if (!related.length) {
