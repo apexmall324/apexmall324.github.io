@@ -4,7 +4,7 @@ A static storefront built with HTML, CSS, and JavaScript. The product catalog is
 
 ## Add products, images, and videos
 
-Put product photos and video files in the root [product](./product/) folder, then add product records to the `PRODUCTS` array in [js/app.js](./js/app.js). Media paths are relative to the project root. Videos should be MP4 or WebM files; for large videos, use a video host and provide a direct link to the video file.
+Put product photos and video files in the appropriate category folder inside [product](./product/) (for example, [bags](./product/bags/), [watches](./product/watches/), or [footwear](./product/footwear/)), then add product records to the `PRODUCTS` array in [js/app.js](./js/app.js). Media paths are relative to the project root. Videos should be MP4 or WebM files; for large videos, use a video host and provide a direct link to the video file.
 
 Add another product object inside the existing array (keep its surrounding `export const PRODUCTS = [ ... ];`):
 
@@ -24,11 +24,17 @@ Add another product object inside the existing array (keep its surrounding `expo
 },
 ```
 
-Use a unique `id`, a numeric `price` and `stock`, and an image path beginning with `product/`. Set `category.image` to the image you want shown on the home-page category tile; products in the same category share that image, so set it consistently. Add extra images to `gallery` and videos to `videos`; both are optional arrays, so use `[]` when you have none. Videos appear with playback controls on the product page. If a product image is unavailable, the storefront shows `product/placeholder.svg`. Product order and enquiry messages use the WhatsApp number configured in `js/app.js`.
+Use a unique `id`, a numeric `price` and `stock`, and an image path beginning with `product/` that includes its category folder (such as `product/watches/sample-watch.jpg`). Set `category.image` to the image you want shown on the home-page category tile; products in the same category share that image, so set it consistently. Add extra images to `gallery` and videos to `videos`; both are optional arrays, so use `[]` when you have none. Videos appear with playback controls on the product page. If a product image is unavailable, the storefront shows `product/placeholder.svg`. Product order and enquiry messages use the WhatsApp number configured in `js/app.js`.
+
+Product cards are shuffled each time a visitor opens a page. On the shop page, the shuffled order stays stable while filtering or searching; choosing a sort option applies that sort instead.
+
+## Footwear catalogue
+
+The 88 footwear styles are listed in [js/footwear-products.js](./js/footwear-products.js), with their 800 × 800 images in [product/footwear](./product/footwear/). Footwear is wholesale only and sold by the full carton; individual pairs are not sold. Product cards, product pages, cart, and checkout show both the per-pair reference price and carton price. Adding a footwear item to the cart charges the full carton price, and cart/checkout quantities refer to cartons. Each carton price uses the source pair price plus GH₵5, multiplied by the number of pairs in the carton. These products have no stock quantity configured, so cart quantities are not stock-limited.
 
 ## Homepage banners
 
-The homepage banner carousel and its text, images, and links are configured in the `BANNERS` array in [js/app.js](./js/app.js). Upload banner images to `product/` and set each banner's `image`, `alt`, `eyebrow`, `title`, `description`, `ctaLabel`, and `ctaHref`. Add more objects to create more slides. The banner pauses while a visitor hovers over it or uses its controls, and it does not auto-rotate when reduced motion is enabled.
+The homepage banner carousel and its text, images, and links are configured in the `BANNERS` array in [js/app.js](./js/app.js). Upload banner images to the appropriate `product/` category folder and set each banner's `image`, `alt`, `eyebrow`, `title`, `description`, `ctaLabel`, and `ctaHref`. Add more objects to create more slides. The banner pauses while a visitor hovers over it or uses its controls, and it does not auto-rotate when reduced motion is enabled.
 
 ## Customer review and dispatch stories
 
