@@ -4438,6 +4438,75 @@ textarea:focus-visible {
     object-fit: contain;
 }
 
+.product-detail-image .product-image {
+    position: relative;
+    touch-action: pan-y;
+}
+
+.product-image-controls {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.product-image-arrow {
+    position: absolute;
+    top: 50%;
+    display: grid;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    place-items: center;
+    border: 1px solid rgba(30, 30, 30, .15);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .9);
+    color: #242424;
+    font: inherit;
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+    pointer-events: auto;
+    transform: translateY(-50%);
+}
+
+.product-image-arrow:first-child {
+    left: 12px;
+}
+
+.product-image-arrow:last-child {
+    right: 12px;
+}
+
+.product-image-indicator {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    padding: 4px 9px;
+    border-radius: 999px;
+    background: rgba(30, 30, 30, .68);
+    color: white;
+    font-size: 12px;
+    transform: translateX(-50%);
+}
+
+.product-gallery-thumb {
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid var(--border);
+    background: #f5f2ec;
+    cursor: pointer;
+}
+
+.product-gallery-thumb[aria-pressed="true"] {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px var(--accent);
+}
+
+.product-gallery-thumb img {
+    display: block;
+    width: 100%;
+}
+
 .product-detail-content {
     padding: 18px 0;
 }
@@ -4508,6 +4577,14 @@ textarea:focus-visible {
     width: 38px;
     font-size: 13px;
     font-weight: 600;
+}
+
+.quantity-selector .quantity-unit {
+    width: auto;
+    padding: 0 12px;
+    color: var(--gray);
+    font-size: 12px;
+    font-weight: 500;
 }
 
 .product-detail-content .product-add-button {
@@ -4807,6 +4884,35 @@ textarea:focus-visible {
     padding: 46px var(--page-gutter) 54px;
     border-bottom: 1px solid var(--border);
     background: #fbf9f4;
+}
+
+.pair-price-reference {
+    margin: 3px 0;
+    color: var(--gray);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.wholesale-note {
+    margin: 4px 0;
+    color: #68675f;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.product-card .wholesale-note {
+    font-size: 10px;
+}
+
+.product-detail-content > .pair-price-reference {
+    margin: -12px 0 14px;
+    font-size: 15px;
+}
+
+.product-detail-content > .wholesale-note {
+    margin: 0 0 18px;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .stories-section .section-heading {
