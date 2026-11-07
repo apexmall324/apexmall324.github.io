@@ -6,11 +6,11 @@ const CART_KEY = "cart";
 export const PRODUCTS = [
     {
         id: "ladies-gold-watch-and-bracelet-set",
-        name: "Ladies Gold Watch and Bracelet Set",
+        name: "Ladies Mico Gold Watch and Bracelet Set",
         category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 95,
         stock: 5,
-        description: "",
+        description: "A coordinated gold-tone watch and bracelet set with a matching polished finish and a classic round watch face. The watch dial displays Mico lettering; the set pairs easily with occasion outfits or adds a refined accent to everyday wear.",
         image: "product/watches/ladies-gold-watch-and-bracelet-set.png",
         gallery: [],
         videos: [],
@@ -19,11 +19,11 @@ export const PRODUCTS = [
     },
     {
         id: "ladies-rhinestone-heart-watch",
-        name: "Ladies Rhinestone Heart Watch",
+        name: "Ladies Gold Rhinestone Heart Watch",
         category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 75,
         stock: 7,
-        description: "Gold-tone ladies watch with a crystal-accented heart design.",
+        description: "A gold-tone ladies' watch with a heart-shaped silhouette and sparkling rhinestone accents for a romantic, dressy look. Its decorative design makes it an easy statement accessory for celebrations or evening outfits.",
         image: "product/watches/gold-heart-watch-and-bracelet-set.jpg",
         gallery: ["product/watches/ladies-rhinestone-heart-watch.jpeg"],
         videos: [],
@@ -32,11 +32,11 @@ export const PRODUCTS = [
     },
     {
         id: "ladies-gold-butterfly-crystal-watch",
-        name: "Ladies Gold Butterfly Crystal Watch",
+        name: "Ladies Citizen Gold Butterfly Crystal Watch",
         category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 75,
         stock: 4,
-        description: "Gold-tone ladies watch with a crystal butterfly detail.",
+        description: "A gold-tone ladies' watch with a crystal butterfly accent and CITIZEN lettering visible on the dial. The decorative detail and bright finish give it a dressy look; the pictured lettering is not a verification of brand authenticity.",
         image: "product/watches/ladies-gold-butterfly-crystal-watch.jpeg",
         gallery: [],
         videos: [],
@@ -49,7 +49,7 @@ export const PRODUCTS = [
         category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 150,
         stock: 3,
-        description: "Gold-tone digital watch with a black display and mesh band.",
+        description: "A gold-tone digital watch featuring a dark rectangular display and a fine mesh-style metal band. Its streamlined silhouette brings a modern accent to casual and smart-casual outfits.",
         image: "product/watches/gold-digital-mesh-watch.jpeg",
         gallery: [],
         videos: [],
@@ -58,11 +58,11 @@ export const PRODUCTS = [
     },
     {
         id: "gold-teardrop-watch-and-bracelet-set",
-        name: "Gold Teardrop Watch and Bracelet Set",
+        name: "Spendy Gold Teardrop Watch and Bracelet Set",
         category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 95,
         stock: 7,
-        description: "Gold-tone watch and matching bracelet with teardrop crystal accents.",
+        description: "A coordinated gold-tone watch and matching bracelet set decorated with clear teardrop-shaped stones. SPENDY and QUARTZ lettering is visible on the watch dial, while the statement embellishments make the set suited to dressy occasions.",
         image: "product/watches/gold-teardrop-watch-and-bracelet-set.jpeg",
         gallery: [],
         videos: [],
@@ -71,11 +71,11 @@ export const PRODUCTS = [
     },
     {
         id: "classic-gold-mesh-watch",
-        name: "Classic Gold Mesh Watch",
+        name: "Classic Welong Gold Mesh Watch",
         category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 35,
         stock: 5,
-        description: "Classic gold-tone watch with a light dial and mesh band.",
+        description: "A classic gold-tone watch with a light-colored dial, slim hour markers, and a fine mesh-style metal band. WELONG lettering is visible on the watch face; its understated design works well for everyday wear or a polished office look.",
         image: "product/watches/classic-gold-mesh-watch.jpeg",
         gallery: [],
         videos: [],
@@ -84,11 +84,11 @@ export const PRODUCTS = [
     },
     {
         id: "rose-gold-square-mesh-watch",
-        name: "Rose Gold Square Mesh Watch",
+        name: "Rose Gold Vitton Square Mesh Watch",
         category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 75,
         stock: 7,
-        description: "Rose gold-tone watch with a square dial and mesh band.",
+        description: "A rose gold-tone watch with a clean square face and coordinating mesh-style band. VITTON lettering appears on the pictured dial; the simple shape and warm finish make it easy to pair with both casual and occasion outfits. The lettering is not a verification of brand authenticity.",
         image: "product/watches/rose-gold-square-mesh-watch.jpeg",
         gallery: [],
         videos: [],
@@ -97,11 +97,11 @@ export const PRODUCTS = [
     },
     {
         id: "sage-green-strap-rectangular-watch",
-        name: "Sage Green Strap Rectangular Watch",
+        name: "Oulijia Sage Green Strap Rectangular Watch",
         category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 50,
         stock: 1,
-        description: "Rectangular gold-tone watch with a sage green strap.",
+        description: "A rectangular gold-tone watch paired with a muted sage green strap for a fresh pop of color. OULIJIA lettering is printed on the pictured packaging, and the slim profile complements relaxed daytime outfits.",
         image: "product/watches/sage-green-strap-rectangular-watch.jpeg",
         gallery: [],
         videos: [],
@@ -110,11 +110,11 @@ export const PRODUCTS = [
     },
     {
         id: "brown-leather-strap-gold-dial-watch",
-        name: "Brown Leather Strap Gold Dial Watch",
+        name: "Oulijia Brown Strap Gold Dial Watch",
         category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 50,
         stock: 1,
-        description: "Gold-tone watch with a brown leather-style strap.",
+        description: "A warm gold-tone watch with a rounded rectangular dial and a brown strap for a timeless, coordinated look. OULIJIA lettering is visible on the packaging; the classic color combination transitions easily from workwear to weekend outfits.",
         image: "product/watches/brown-leather-strap-gold-dial-watch.jpeg",
         gallery: [],
         videos: [],
@@ -123,11 +123,11 @@ export const PRODUCTS = [
     },
     {
         id: "black-leather-strap-rectangular-watch",
-        name: "Black Strap Rectangular Watch",
+        name: "Oulijia Black Strap Rectangular Watch",
         category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 50,
         stock: 1,
-        description: "Rectangular gold-tone watch with a black strap.",
+        description: "A rectangular gold-tone watch with a black strap and a contrasting light dial. OULIJIA and QUARTZ lettering are visible on the pictured watch and packaging; its clean, compact design is suited to everyday and dressier looks.",
         image: "product/watches/gold-tone-rectangular-black-strap-watch.png",
         gallery: [
             "product/watches/black-leather-strap-rectangular-watch.jpeg",
@@ -143,7 +143,7 @@ export const PRODUCTS = [
         category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 50,
         stock: 1,
-        description: "Square gold-tone watch with a burgundy strap.",
+        description: "A square-faced gold-tone watch paired with a rich burgundy strap for a distinctive color accent. The slim, simple profile is easy to style with neutral outfits or coordinate with warm-toned accessories.",
         image: "product/watches/burgundy-strap-square-dial-watch.jpeg",
         gallery: [],
         videos: [],
@@ -152,11 +152,11 @@ export const PRODUCTS = [
     },
     {
         id: "silver-tone-white-dial-watch",
-        name: "Silver-Tone White Dial Watch",
+        name: "Nixon Silver-Tone White Dial Watch",
         category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 95,
         stock: 1,
-        description: "Silver-tone watch with a simple white dial.",
+        description: "A silver-tone watch with a round white dial, minimal hour markers, and a matching metal bracelet. NIXON lettering is visible on the pictured dial; the understated design suits everyday wear and smart-casual outfits.",
         image: "product/watches/silver-tone-white-dial-watch.jpeg",
         gallery: [],
         videos: [],
@@ -165,11 +165,11 @@ export const PRODUCTS = [
     },
     {
         id: "pearl-crystal-watch-and-bracelet-set",
-        name: "Pearl Crystal Watch and Bracelet Set",
+        name: "Spendy Pearl Crystal Watch and Bracelet Set",
         category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 95,
         stock: 1,
-        description: "Gold-tone watch and matching bracelet with pearl-style and crystal accents.",
+        description: "A coordinated gold-tone watch and bracelet set combining pearl-style centers with sparkling crystal details. SPENDY and QUARTZ lettering is visible on the watch dial, and the ornate matching pieces make an elegant occasion accessory.",
         image: "product/watches/pearl-crystal-watch-and-bracelet-set.png",
         gallery: [],
         videos: [],
@@ -182,7 +182,7 @@ export const PRODUCTS = [
         category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 50,
         stock: 1,
-        description: "Gold-tone watch with a yellow dial and two-tone metal band.",
+        description: "A gold-tone watch with a bright yellow dial, clear Arabic numerals, and a two-tone metal bracelet. The bold dial makes the time easy to read at a glance and gives this classic shape a vivid finish.",
         image: "product/watches/gold-two-tone-yellow-dial-watch.jpeg",
         gallery: [],
         videos: [],
@@ -195,7 +195,7 @@ export const PRODUCTS = [
         category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 50,
         stock: 1,
-        description: "Gold-tone watch with a round dial and metal bracelet.",
+        description: "A gold-tone bracelet watch with a round yellow dial, dark numerals, and a polished linked band. Its traditional face and warm metallic finish make it a versatile everyday accessory.",
         image: "product/watches/gold-tone-round-bracelet-watch.jpeg",
         gallery: [],
         videos: [],
@@ -208,7 +208,7 @@ export const PRODUCTS = [
         category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 50,
         stock: 1,
-        description: "Gold-tone watch with a yellow dial and two-tone metal band.",
+        description: "A gold-and-silver-tone watch with a round yellow dial and a linked two-tone bracelet. The contrasting metal colors add visual interest while keeping the classic design easy to coordinate with other jewelry.",
         image: "product/watches/two-tone-metal-band-watch.jpeg",
         gallery: [],
         videos: [],
@@ -217,11 +217,11 @@ export const PRODUCTS = [
     },
     {
         id: "gold-silver-stretch-band-watch",
-        name: "Silver Watch",
+        name: "Gold and Silver-Tone Stretch Band Watch",
         category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 95,
         stock: 1,
-        description: "Silver watch for a sophisticated look.",
+        description: "A compact round watch with a gold-tone face and a flexible two-tone stretch-style band. The mixed-metal finish makes it simple to pair with both gold and silver accessories.",
         image: "product/watches/gold-silver-stretch-band-watch.jpeg",
         gallery: [],
         videos: [],
@@ -234,7 +234,7 @@ export const PRODUCTS = [
         category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 75,
         stock: 100,
-        description: "A colorful assortment of plush handbags with beaded handles.",
+        description: "Browse a playful assortment of plush handbags in different colors and styles. The photos show their soft-looking finishes, gathered tops, and decorative handles. Contact us to confirm which colors are currently available.",
         image: "product/bags/plush-handbag-color-assortment.png",
         gallery: [],
         videos: [],
@@ -247,7 +247,7 @@ export const PRODUCTS = [
         category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 75,
         stock: 100,
-        description: "A display of plush handbags in several colors.",
+        description: "A display of plush handbags in several colors, showing the different silhouettes and handle styles in the collection. A handy overview if you are choosing a look or color; message us to check current availability.",
         image: "product/bags/plush-handbag-display.png",
         gallery: [],
         videos: [],
@@ -260,7 +260,7 @@ export const PRODUCTS = [
         category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 75,
         stock: 100,
-        description: "A black plush handbag with a beaded handle.",
+        description: "A black plush handbag with a soft-textured appearance, a gathered top, and a decorative beaded handle. Its dark color makes it an easy accent for both casual and dressed-up looks.",
         image: "product/bags/black-plush-beaded-handle-handbag.png",
         gallery: [],
         videos: [],
@@ -273,7 +273,7 @@ export const PRODUCTS = [
         category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 75,
         stock: 100,
-        description: "A gray plush handbag with a beaded handle.",
+        description: "A gray plush handbag featuring a soft-textured appearance, gathered top, and decorative beaded handle. The neutral shade offers a subtle alternative to brighter colors.",
         image: "product/bags/gray-plush-beaded-handle-handbag.png",
         gallery: [],
         videos: [],
@@ -286,7 +286,7 @@ export const PRODUCTS = [
         category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 75,
         stock: 100,
-        description: "A pink plush handbag with a beaded handle.",
+        description: "A pink plush handbag with a soft-textured finish, gathered top, and decorative beaded handle. Add a cheerful pop of color to everyday outfits or carry it as a playful accent.",
         image: "product/bags/pink-plush-beaded-handle-handbag.png",
         gallery: [],
         videos: [],
@@ -299,7 +299,7 @@ export const PRODUCTS = [
         category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 75,
         stock: 100,
-        description: "A taupe plush handbag with a beaded handle.",
+        description: "A taupe plush handbag featuring a soft-textured appearance, gathered top, and decorative beaded handle. Its muted tone pairs easily with a range of outfits.",
         image: "product/bags/taupe-plush-beaded-handle-handbag.png",
         gallery: [],
         videos: [],
@@ -312,7 +312,7 @@ export const PRODUCTS = [
         category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 75,
         stock: 100,
-        description: "A collection of plush handbags in assorted colors.",
+        description: "A collection view of plush handbags in assorted colors and styles. See the different shapes and decorative handle details together, then contact us to ask which options are available.",
         image: "product/bags/plush-handbag-color-collection.png",
         gallery: [],
         videos: [],
@@ -325,7 +325,7 @@ export const PRODUCTS = [
         category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 85,
         stock: 50,
-        description: "A taupe plush handbag that comes with a matching fluffy hat.",
+        description: "A coordinated taupe set pairing a plush handbag with a matching fluffy hat. The neutral color creates a soft, put-together look; please contact us to confirm set availability.",
         image: "product/bags/taupe-plush-handbag-fluffy-hat-set.jpeg",
         gallery: [],
         videos: [],
@@ -338,7 +338,7 @@ export const PRODUCTS = [
         category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 85,
         stock: 50,
-        description: "A black plush handbag that comes with a matching fluffy hat.",
+        description: "A coordinated black set pairing a plush handbag with a matching fluffy hat. The dark shade gives the soft-textured accessories a bold, easy-to-style look.",
         image: "product/bags/black-plush-handbag-fluffy-hat-set.jpeg",
         gallery: [],
         videos: [],
@@ -351,7 +351,7 @@ export const PRODUCTS = [
         category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 85,
         stock: 50,
-        description: "A hot pink plush handbag that comes with a matching fluffy hat.",
+        description: "A bright hot-pink set featuring a plush handbag with a matching fluffy hat. A playful coordinated look for adding a vivid color accent.",
         image: "product/bags/hot-pink-plush-handbag-fluffy-hat-set.jpeg",
         gallery: [],
         videos: [],
@@ -364,7 +364,7 @@ export const PRODUCTS = [
         category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 85,
         stock: 50,
-        description: "A light pink plush handbag that comes with a matching fluffy hat.",
+        description: "A light-pink set featuring a plush handbag and a matching fluffy hat. Its soft color gives the coordinated accessories a gentle, playful finish.",
         image: "product/bags/light-pink-plush-handbag-fluffy-hat-set.jpeg",
         gallery: [],
         videos: [],
@@ -377,7 +377,7 @@ export const PRODUCTS = [
         category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 85,
         stock: 50,
-        description: "A white plush handbag that comes with a matching fluffy hat.",
+        description: "A white set featuring a plush handbag paired with a matching fluffy hat. The light shade makes this coordinated look stand out; contact us to confirm availability.",
         image: "product/bags/white-plush-handbag-fluffy-hat-set.jpeg",
         gallery: [],
         videos: [],
@@ -390,12 +390,90 @@ export const PRODUCTS = [
         category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 85,
         stock: 50,
-        description: "A collection of plush handbags, each paired with a fluffy hat.",
+        description: "A collection view of plush handbags paired with fluffy hats in several colors. Compare the coordinated looks in the photo and message us to confirm the colors currently available.",
         image: "product/bags/plush-handbag-fluffy-hat-color-collection.jpeg",
         gallery: [],
         videos: [],
         is_featured: false,
         created_at: "2026-11-03"
+    },
+    {
+        id: "black-structured-handbag",
+        name: "Black Structured Mschcino Handbag",
+        category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
+        price: 370,
+        stock: 100,
+        description: "A black handbag with a sculpted structured shape, curved front flap, long shoulder strap, and gold-tone Mschcino lettering displayed across the front. A polished statement piece in a versatile dark color.",
+        image: "product/bags/black-structured-handbag.png",
+        gallery: [],
+        videos: [],
+        is_featured: false,
+        created_at: "2026-11-07"
+    },
+    {
+        id: "burgundy-structured-handbag",
+        name: "Burgundy Structured Mschcino Handbag",
+        category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
+        price: 370,
+        stock: 100,
+        description: "A burgundy handbag with a sculpted structured shape, curved front flap, long shoulder strap, and gold-tone Mschcino lettering displayed across the front. The rich color adds a refined accent to your look.",
+        image: "product/bags/burgundy-structured-handbag.png",
+        gallery: [],
+        videos: [],
+        is_featured: false,
+        created_at: "2026-11-07"
+    },
+    {
+        id: "gold-structured-handbag",
+        name: "Gold Structured Mschcino Handbag",
+        category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
+        price: 370,
+        stock: 100,
+        description: "A gold-tone handbag with a sculpted structured shape, curved front flap, long shoulder strap, and Mschcino lettering displayed across the front. A standout accent for occasions or evening looks.",
+        image: "product/bags/gold-structured-handbag.png",
+        gallery: [],
+        videos: [],
+        is_featured: false,
+        created_at: "2026-11-07"
+    },
+    {
+        id: "wine-red-structured-handbag",
+        name: "Wine Red Structured Mschcino Handbag",
+        category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
+        price: 370,
+        stock: 100,
+        description: "A wine-red handbag with a sculpted structured shape, curved front flap, long shoulder strap, and gold-tone Mschcino lettering displayed across the front. Its deep shade brings a rich pop of color.",
+        image: "product/bags/wine-red-structured-handbag.png",
+        gallery: [],
+        videos: [],
+        is_featured: false,
+        created_at: "2026-11-07"
+    },
+    {
+        id: "structured-handbag-color-assortment",
+        name: "Mschcino Structured Handbag Color Assortment",
+        category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
+        price: 370,
+        stock: 100,
+        description: "An assortment view of structured handbags in several colors, including dark, red, and metallic shades, with Mschcino lettering visible on the front of the pictured bags. Contact us to confirm available colors.",
+        image: "product/bags/structured-handbag-color-assortment.jpeg",
+        gallery: [],
+        videos: [],
+        is_featured: false,
+        created_at: "2026-11-07"
+    },
+    {
+        id: "structured-handbag-color-collection",
+        name: "Mschcino Structured Handbag Color Collection",
+        category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
+        price: 75,
+        stock: 100,
+        description: "A collection view showcasing structured handbags in an assortment of colors, with Mschcino lettering visible on the pictured front details. Compare the finishes, then message us to check which color you can order.",
+        image: "product/bags/structured-handbag-color-collection.png",
+        gallery: [],
+        videos: [],
+        is_featured: false,
+        created_at: "2026-11-07"
     },
     ...FOOTWEAR_PRODUCTS
 ];
@@ -405,7 +483,7 @@ const BANNERS = [
         eyebrow: "NEW COLLECTION",
         title: "Discover products you'll love.",
         description: "Explore our latest collection and find something made just for you.",
-        image: "product/watches/watch-stock-display.jpeg",
+        image: "product/banner-watch-collection.png",
         alt: "Apexmall shopping collection",
         ctaLabel: "Shop Now",
         ctaHref: "shop.html"
@@ -414,7 +492,7 @@ const BANNERS = [
         eyebrow: "A LITTLE EVERYDAY LUXURY",
         title: "Find a piece that feels like you.",
         description: "Explore the watch and bracelet set, and browse the collection at Apexmall.",
-        image: "product/watches/watch-collection-flatlay.jpeg",
+        image: "product/banner-bag-collection.png",
         alt: "Ladies gold watch and bracelet set",
         ctaLabel: "Shop Watches",
         ctaHref: "shop.html?category=Watches"
@@ -659,9 +737,12 @@ async function displayFeaturedProducts() {
 
     const products = await getProducts();
     const featured = shuffleProducts(products.filter(product => product.is_featured)).slice(0, 8);
+    const featuredIds = new Set(featured.map(product => product.id));
+    const remaining = shuffleProducts(products.filter(product => !featuredIds.has(product.id)));
+    const selection = [...featured, ...remaining].slice(0, 4);
     renderCards(
         container,
-        featured.length ? featured : shuffleProducts(products).slice(0, 8),
+        selection,
         "Our product collection is being prepared. Please check back soon."
     );
 }
@@ -754,6 +835,30 @@ function setupBackToTop() {
     window.addEventListener("scroll", updateVisibility, { passive: true });
     button.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
     updateVisibility();
+}
+
+function setupHomeReveals() {
+    const sections = document.querySelectorAll(".home-page [data-reveal]");
+    if (
+        !sections.length ||
+        !("IntersectionObserver" in window) ||
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+        sections.forEach(section => section.classList.add("is-visible"));
+        return;
+    }
+
+    document.body.classList.add("home-reveal-ready");
+    const observer = new IntersectionObserver((entries, currentObserver) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                currentObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    sections.forEach(section => observer.observe(section));
 }
 
 function showLoadError(containerId, error) {
@@ -985,6 +1090,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCartCount();
     setupMobileNav();
     setupBackToTop();
+    setupHomeReveals();
     setupHeroBanners();
     setupStories();
     displayFeaturedProducts().catch(error => showLoadError("featured-products", error));

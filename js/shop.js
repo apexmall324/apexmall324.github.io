@@ -1,4 +1,4 @@
-import { createProductCard, getCategories, getProducts, updateCartCount } from "./app.js";
+import { createProductCard, getCategories, getProducts, shuffleProducts, updateCartCount } from "./app.js";
 
 const productContainer = document.getElementById("shop-products");
 const searchInput = document.getElementById("product-search");
@@ -69,7 +69,7 @@ function displayProducts() {
 async function init() {
     productContainer.innerHTML = '<p class="loading-note">Loading products…</p>';
     const [products, categories] = await Promise.all([getProducts(), getCategories()]);
-    allProducts = products;
+    allProducts = shuffleProducts(products);
     loadCategoryOptions(categories);
 
     const params = new URLSearchParams(window.location.search);

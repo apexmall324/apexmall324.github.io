@@ -2,7 +2,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-0169b",
         "name": "0169B",
-        "category": "Women's slippers",
+        "category": {id: "Women's slippers", name: "Women's slippers", image: "product/footwear/1180.jpg"},
         "price": 1080,
         "sizeRange": "37-42",
         "pairsPerCarton": 36,
@@ -18,7 +18,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-yd87b",
         "name": "YD87B",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp02.jpg" },
         "price": 1620,
         "sizeRange": "37-42",
         "pairsPerCarton": 36,
@@ -34,7 +34,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-zp07",
         "name": "ZP07",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp02.jpg" },
         "price": 1620,
         "sizeRange": "38-43",
         "pairsPerCarton": 36,
@@ -50,7 +50,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-86-34",
         "name": "86-34",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp02.jpg" },
         "price": 1200,
         "sizeRange": "40-45",
         "pairsPerCarton": 24,
@@ -66,7 +66,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-jn171d",
         "name": "JN171D",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1404,
         "sizeRange": "25-30",
         "pairsPerCarton": 36,
@@ -82,7 +82,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-jn171e",
         "name": "JN171E",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1332,
         "sizeRange": "20-25",
         "pairsPerCarton": 36,
@@ -98,7 +98,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-jn177c",
         "name": "JN177C",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1800,
         "sizeRange": "31-36",
         "pairsPerCarton": 36,
@@ -114,7 +114,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-501c",
         "name": "501C",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1044,
         "sizeRange": "31-36",
         "pairsPerCarton": 36,
@@ -130,7 +130,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-501d",
         "name": "501D",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 972,
         "sizeRange": "25-30",
         "pairsPerCarton": 36,
@@ -146,7 +146,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-501e",
         "name": "501E",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 900,
         "sizeRange": "20-25",
         "pairsPerCarton": 36,
@@ -162,7 +162,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-b26-2b",
         "name": "B26-2B",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1620,
         "sizeRange": "37-42",
         "pairsPerCarton": 36,
@@ -178,7 +178,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-092c",
         "name": "092C",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1080,
         "sizeRange": "31-36",
         "pairsPerCarton": 36,
@@ -194,7 +194,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-092d",
         "name": "092D",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1044,
         "sizeRange": "25-30",
         "pairsPerCarton": 36,
@@ -210,7 +210,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-092e",
         "name": "092E",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1008,
         "sizeRange": "20-25",
         "pairsPerCarton": 36,
@@ -226,7 +226,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-7107c",
         "name": "7107C",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 2160,
         "sizeRange": "31-36",
         "pairsPerCarton": 36,
@@ -242,7 +242,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-1012-8c",
         "name": "1012-8C",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1260,
         "sizeRange": "31-36",
         "pairsPerCarton": 36,
@@ -258,7 +258,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-7100c",
         "name": "7100C",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1620,
         "sizeRange": "31-36",
         "pairsPerCarton": 36,
@@ -274,7 +274,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-7100d",
         "name": "7100D",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1548,
         "sizeRange": "25-30",
         "pairsPerCarton": 36,
@@ -290,7 +290,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-7101c",
         "name": "7101C",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1620,
         "sizeRange": "31-36",
         "pairsPerCarton": 36,
@@ -306,7 +306,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-7101d",
         "name": "7101D",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1548,
         "sizeRange": "25-30",
         "pairsPerCarton": 36,
@@ -322,7 +322,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-7101e",
         "name": "7101E",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1476,
         "sizeRange": "20-25",
         "pairsPerCarton": 36,
@@ -338,7 +338,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-0169c",
         "name": "0169C",
-        "category": "Women's slippers",
+        "category": {id: "Women's slippers", name: "Women's slippers", image: "product/footwear/1180.jpg"},
         "price": 2016,
         "sizeRange": "31-36",
         "pairsPerCarton": 72,
@@ -354,7 +354,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-jn167a",
         "name": "JN167A",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1320,
         "sizeRange": "40-45",
         "pairsPerCarton": 24,
@@ -370,7 +370,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-jn179a",
         "name": "JN179A",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 2040,
         "sizeRange": "40-45",
         "pairsPerCarton": 24,
@@ -386,7 +386,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-jn158a",
         "name": "JN158A",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1560,
         "sizeRange": "48-45",
         "pairsPerCarton": 24,
@@ -402,7 +402,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-661b",
         "name": "661B",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1440,
         "sizeRange": "37-42",
         "pairsPerCarton": 24,
@@ -418,7 +418,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-662b",
         "name": "662B",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1440,
         "sizeRange": "40-45",
         "pairsPerCarton": 24,
@@ -434,7 +434,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-w26-1b",
         "name": "W26-1B",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1620,
         "sizeRange": "37-42",
         "pairsPerCarton": 36,
@@ -450,7 +450,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-jn175e",
         "name": "JN175E",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 972,
         "sizeRange": "20-25",
         "pairsPerCarton": 36,
@@ -466,7 +466,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-jn175c",
         "name": "JN175C",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1116,
         "sizeRange": "31-36",
         "pairsPerCarton": 36,
@@ -482,7 +482,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-jn175d",
         "name": "JN175D",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1044,
         "sizeRange": "25-30",
         "pairsPerCarton": 36,
@@ -498,7 +498,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-jn175b",
         "name": "JN175B",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1188,
         "sizeRange": "37-42",
         "pairsPerCarton": 36,
@@ -514,7 +514,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-jn161e",
         "name": "JN161E",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1080,
         "sizeRange": "20-25",
         "pairsPerCarton": 36,
@@ -530,7 +530,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-97005c",
         "name": "97005C",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1620,
         "sizeRange": "31-36",
         "pairsPerCarton": 36,
@@ -546,7 +546,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-720a",
         "name": "720A",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1560,
         "sizeRange": "40-45",
         "pairsPerCarton": 24,
@@ -562,7 +562,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-720b",
         "name": "720B",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1560,
         "sizeRange": "37-42",
         "pairsPerCarton": 24,
@@ -578,7 +578,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-731b",
         "name": "731B",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1560,
         "sizeRange": "37-42",
         "pairsPerCarton": 24,
@@ -594,7 +594,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-97100",
         "name": "97100",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp02.jpg" },
         "price": 1560,
         "sizeRange": "40-44",
         "pairsPerCarton": 30,
@@ -610,7 +610,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-jn183c",
         "name": "JN183C",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 2160,
         "sizeRange": "31-36",
         "pairsPerCarton": 36,
@@ -626,7 +626,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-663",
         "name": "663",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1200,
         "sizeRange": "40-45",
         "pairsPerCarton": 24,
@@ -642,7 +642,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-701a",
         "name": "701A",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1200,
         "sizeRange": "40-45",
         "pairsPerCarton": 24,
@@ -658,7 +658,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-701b",
         "name": "701B",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1200,
         "sizeRange": "37-42",
         "pairsPerCarton": 24,
@@ -674,7 +674,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-jn166b",
         "name": "JN166B",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1320,
         "sizeRange": "37-42",
         "pairsPerCarton": 24,
@@ -690,7 +690,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-983-3a",
         "name": "983-3A",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp02.jpg" },
         "price": 960,
         "sizeRange": "38-43",
         "pairsPerCarton": 24,
@@ -706,7 +706,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-661w",
         "name": "661W",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1440,
         "sizeRange": "37-42",
         "pairsPerCarton": 24,
@@ -722,7 +722,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-662w",
         "name": "662W",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1440,
         "sizeRange": "40-45",
         "pairsPerCarton": 24,
@@ -738,7 +738,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-23519",
         "name": "23519",
-        "category": "Women's slippers",
+        "category": {id: "Women's slippers", name: "Women's slippers", image: "product/footwear/1180.jpg"},
         "price": 1500,
         "sizeRange": "37-42",
         "pairsPerCarton": 60,
@@ -754,7 +754,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-2505",
         "name": "2505",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp02.jpg" },
         "price": 972,
         "sizeRange": "40-45",
         "pairsPerCarton": 36,
@@ -770,7 +770,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-5816",
         "name": "5816",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp02.jpg" },
         "price": 972,
         "sizeRange": "40-45",
         "pairsPerCarton": 36,
@@ -786,7 +786,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-5915",
         "name": "5915",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp02.jpg" },
         "price": 1080,
         "sizeRange": "38-43",
         "pairsPerCarton": 24,
@@ -802,7 +802,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-5913",
         "name": "5913",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp02.jpg" },
         "price": 1080,
         "sizeRange": "38-43",
         "pairsPerCarton": 24,
@@ -818,7 +818,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-5912",
         "name": "5912",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp02.jpg" },
         "price": 1080,
         "sizeRange": "38-43",
         "pairsPerCarton": 24,
@@ -834,7 +834,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-6065",
         "name": "6065",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp02.jpg" },
         "price": 1248,
         "sizeRange": "38-43",
         "pairsPerCarton": 24,
@@ -850,7 +850,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-99321",
         "name": "99321",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp02.jpg" },
         "price": 960,
         "sizeRange": "38-43",
         "pairsPerCarton": 24,
@@ -866,7 +866,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-35054",
         "name": "35054",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp02.jpg" },
         "price": 1248,
         "sizeRange": "38-43",
         "pairsPerCarton": 24,
@@ -882,7 +882,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-2999",
         "name": "2999",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp02.jpg" },
         "price": 1320,
         "sizeRange": "38-43",
         "pairsPerCarton": 24,
@@ -898,7 +898,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-86021",
         "name": "86021",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp02.jpg" },
         "price": 840,
         "sizeRange": "40-45",
         "pairsPerCarton": 24,
@@ -914,7 +914,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-1180",
         "name": "1180",
-        "category": "Women's slippers",
+        "category": {id: "Women's slippers", name: "Women's slippers", image: "product/footwear/1180.jpg"},
         "price": 1200,
         "sizeRange": "37-42",
         "pairsPerCarton": 60,
@@ -930,7 +930,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-1181",
         "name": "1181",
-        "category": "Women's slippers",
+        "category": {id: "Women's slippers", name: "Women's slippers", image: "product/footwear/1180.jpg"},
         "price": 1500,
         "sizeRange": "37-42",
         "pairsPerCarton": 60,
@@ -946,7 +946,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-1182",
         "name": "1182",
-        "category": "Women's slippers",
+        "category": {id: "Women's slippers", name: "Women's slippers", image: "product/footwear/1180.jpg"},
         "price": 1500,
         "sizeRange": "37-42",
         "pairsPerCarton": 60,
@@ -962,7 +962,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-1183",
         "name": "1183",
-        "category": "Women's slippers",
+        "category": {id: "Women's slippers", name: "Women's slippers", image: "product/footwear/1180.jpg"},
         "price": 1500,
         "sizeRange": "37-42",
         "pairsPerCarton": 60,
@@ -978,7 +978,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-1185",
         "name": "1185",
-        "category": "Women's slippers",
+        "category": {id: "Women's slippers", name: "Women's slippers", image: "product/footwear/1180.jpg"},
         "price": 1200,
         "sizeRange": "37-42",
         "pairsPerCarton": 60,
@@ -994,7 +994,8 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-jn162d",
         "name": "JN162D",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1080,
         "sizeRange": "25-30",
         "pairsPerCarton": 36,
@@ -1010,7 +1011,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-jn162e",
         "name": "JN162E",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1080,
         "sizeRange": "20-25",
         "pairsPerCarton": 36,
@@ -1026,7 +1027,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-jn163e",
         "name": "JN163E",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1080,
         "sizeRange": "20-25",
         "pairsPerCarton": 36,
@@ -1042,7 +1043,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-jn160b",
         "name": "JN160B",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1320,
         "sizeRange": "37-42",
         "pairsPerCarton": 24,
@@ -1058,7 +1059,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-jn91a",
         "name": "JN91A",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1200,
         "sizeRange": "40-45",
         "pairsPerCarton": 24,
@@ -1074,7 +1075,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-jn103a",
         "name": "JN103A",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1440,
         "sizeRange": "40-45",
         "pairsPerCarton": 24,
@@ -1090,7 +1091,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-jn209a",
         "name": "JN209A",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1080,
         "sizeRange": "40-45",
         "pairsPerCarton": 24,
@@ -1106,7 +1107,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-zp02",
         "name": "ZP02",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp02.jpg" },
         "price": 1800,
         "sizeRange": "38-43",
         "pairsPerCarton": 30,
@@ -1122,7 +1123,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-zp06",
         "name": "ZP06",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp0.jpg" },
         "price": 1050,
         "sizeRange": "38-43",
         "pairsPerCarton": 30,
@@ -1138,7 +1139,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-6331b",
         "name": "6331B",
-        "category": "Women's slippers",
+        "category": {id: "Women's slippers", name: "Women's slippers", image: "product/footwear/1180.jpg"},
         "price": 1500,
         "sizeRange": "37-42",
         "pairsPerCarton": 60,
@@ -1154,7 +1155,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-61192",
         "name": "61192",
-        "category": "Women's slippers",
+        "category": {id: "Women's slippers", name: "Women's slippers", image: "product/footwear/1180.jpg"},
         "price": 1500,
         "sizeRange": "37-42",
         "pairsPerCarton": 60,
@@ -1170,7 +1171,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-97011b",
         "name": "97011B",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1440,
         "sizeRange": "37-42",
         "pairsPerCarton": 24,
@@ -1186,7 +1187,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-97013a",
         "name": "97013A",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1080,
         "sizeRange": "40-45",
         "pairsPerCarton": 24,
@@ -1202,7 +1203,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-97016d",
         "name": "97016D",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1908,
         "sizeRange": "25-30",
         "pairsPerCarton": 36,
@@ -1218,7 +1219,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-97016c",
         "name": "97016C",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1980,
         "sizeRange": "31-36",
         "pairsPerCarton": 36,
@@ -1234,7 +1235,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-23522",
         "name": "23522",
-        "category": "Women's slippers",
+        "category": {id: "Women's slippers", name: "Women's slippers", image: "product/footwear/1180.jpg"},
         "price": 1500,
         "sizeRange": "37-42",
         "pairsPerCarton": 60,
@@ -1250,7 +1251,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-yd80b",
         "name": "YD80B",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp02.jpg" },
         "price": 1260,
         "sizeRange": "37-42",
         "pairsPerCarton": 36,
@@ -1266,7 +1267,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-yd88b",
         "name": "YD88B",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp02.jpg" },
         "price": 1548,
         "sizeRange": "37-42",
         "pairsPerCarton": 36,
@@ -1282,7 +1283,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-yd77b",
         "name": "YD77B",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp02.jpg" },
         "price": 1260,
         "sizeRange": "37-42",
         "pairsPerCarton": 36,
@@ -1298,7 +1299,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-7312",
         "name": "7312",
-        "category": "Men's slippers",
+        "category": { id: "Men's slippers", name: "Men's slippers", image: "product/footwear/zp02.jpg" },
         "price": 2550,
         "sizeRange": "38-43",
         "pairsPerCarton": 30,
@@ -1314,7 +1315,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-7911c",
         "name": "7911C",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1620,
         "sizeRange": "31-36",
         "pairsPerCarton": 36,
@@ -1330,7 +1331,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-7911d",
         "name": "7911D",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1548,
         "sizeRange": "25-30",
         "pairsPerCarton": 36,
@@ -1346,7 +1347,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-7911e",
         "name": "7911E",
-        "category": "Children's shoes",
+        "category": {id: "Children's shoes", name: "Children's shoes", image: "product/footwear/jn162d.jpg"},
         "price": 1476,
         "sizeRange": "20-25",
         "pairsPerCarton": 36,
@@ -1362,7 +1363,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-10061",
         "name": "10061",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 2820,
         "sizeRange": "40-45",
         "pairsPerCarton": 12,
@@ -1378,7 +1379,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-1089",
         "name": "1089",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 3300,
         "sizeRange": "40-45",
         "pairsPerCarton": 12,
@@ -1394,7 +1395,7 @@ export const FOOTWEAR_PRODUCTS = [
     {
         "id": "footwear-6963",
         "name": "6963",
-        "category": "Trainers",
+        "category": {id: "Trainers", name: "Trainers", image: "product/footwear/10061.jpg"},
         "price": 1980,
         "sizeRange": "40-45",
         "pairsPerCarton": 12,
