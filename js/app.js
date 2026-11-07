@@ -1,3 +1,5 @@
+import { FOOTWEAR_PRODUCTS } from "./footwear-products.js";
+
 export const WHATSAPP_NUMBER = "233597323795";
 const CART_KEY = "cart";
 
@@ -5,11 +7,11 @@ export const PRODUCTS = [
     {
         id: "ladies-gold-watch-and-bracelet-set",
         name: "Ladies Gold Watch and Bracelet Set",
-        category: { id: "watches", name: "Watches", image: "product/ladies-gold-watch-and-bracelet-set.png" },
+        category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 95,
         stock: 5,
         description: "",
-        image: "product/ladies-gold-watch-and-bracelet-set.png",
+        image: "product/watches/ladies-gold-watch-and-bracelet-set.png",
         gallery: [],
         videos: [],
         is_featured: true,
@@ -18,12 +20,12 @@ export const PRODUCTS = [
     {
         id: "ladies-rhinestone-heart-watch",
         name: "Ladies Rhinestone Heart Watch",
-        category: { id: "watches", name: "Watches", image: "product/ladies-gold-watch-and-bracelet-set.png" },
+        category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 75,
         stock: 7,
         description: "Gold-tone ladies watch with a crystal-accented heart design.",
-        image: "product/gold-heart-watch-and-bracelet-set.jpg",
-        gallery: [],
+        image: "product/watches/gold-heart-watch-and-bracelet-set.jpg",
+        gallery: ["product/watches/ladies-rhinestone-heart-watch.jpeg"],
         videos: [],
         is_featured: false,
         created_at: "2026-11-01"
@@ -31,11 +33,11 @@ export const PRODUCTS = [
     {
         id: "ladies-gold-butterfly-crystal-watch",
         name: "Ladies Gold Butterfly Crystal Watch",
-        category: { id: "watches", name: "Watches", image: "product/ladies-gold-watch-and-bracelet-set.png" },
+        category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 75,
         stock: 4,
         description: "Gold-tone ladies watch with a crystal butterfly detail.",
-        image: "product/ladies-gold-butterfly-crystal-watch.jpeg",
+        image: "product/watches/ladies-gold-butterfly-crystal-watch.jpeg",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -44,11 +46,11 @@ export const PRODUCTS = [
     {
         id: "gold-digital-mesh-watch",
         name: "Gold Digital Mesh Watch",
-        category: { id: "watches", name: "Watches", image: "product/ladies-gold-watch-and-bracelet-set.png" },
+        category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 150,
         stock: 3,
         description: "Gold-tone digital watch with a black display and mesh band.",
-        image: "product/gold-digital-mesh-watch.jpeg",
+        image: "product/watches/gold-digital-mesh-watch.jpeg",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -57,11 +59,11 @@ export const PRODUCTS = [
     {
         id: "gold-teardrop-watch-and-bracelet-set",
         name: "Gold Teardrop Watch and Bracelet Set",
-        category: { id: "watches", name: "Watches", image: "product/ladies-gold-watch-and-bracelet-set.png" },
+        category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 95,
         stock: 7,
         description: "Gold-tone watch and matching bracelet with teardrop crystal accents.",
-        image: "product/gold-teardrop-watch-and-bracelet-set.jpeg",
+        image: "product/watches/gold-teardrop-watch-and-bracelet-set.jpeg",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -70,11 +72,11 @@ export const PRODUCTS = [
     {
         id: "classic-gold-mesh-watch",
         name: "Classic Gold Mesh Watch",
-        category: { id: "watches", name: "Watches", image: "product/ladies-gold-watch-and-bracelet-set.png" },
+        category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 35,
         stock: 5,
         description: "Classic gold-tone watch with a light dial and mesh band.",
-        image: "product/classic-gold-mesh-watch.jpeg",
+        image: "product/watches/classic-gold-mesh-watch.jpeg",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -83,11 +85,11 @@ export const PRODUCTS = [
     {
         id: "rose-gold-square-mesh-watch",
         name: "Rose Gold Square Mesh Watch",
-        category: { id: "watches", name: "Watches", image: "product/ladies-gold-watch-and-bracelet-set.png" },
+        category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 75,
         stock: 7,
         description: "Rose gold-tone watch with a square dial and mesh band.",
-        image: "product/rose-gold-square-mesh-watch.jpeg",
+        image: "product/watches/rose-gold-square-mesh-watch.jpeg",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -96,11 +98,11 @@ export const PRODUCTS = [
     {
         id: "sage-green-strap-rectangular-watch",
         name: "Sage Green Strap Rectangular Watch",
-        category: { id: "watches", name: "Watches", image: "product/ladies-gold-watch-and-bracelet-set.png" },
+        category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 50,
         stock: 1,
         description: "Rectangular gold-tone watch with a sage green strap.",
-        image: "product/sage-green-strap-rectangular-watch.jpeg",
+        image: "product/watches/sage-green-strap-rectangular-watch.jpeg",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -109,11 +111,11 @@ export const PRODUCTS = [
     {
         id: "brown-leather-strap-gold-dial-watch",
         name: "Brown Leather Strap Gold Dial Watch",
-        category: { id: "watches", name: "Watches", image: "product/ladies-gold-watch-and-bracelet-set.png" },
+        category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 50,
         stock: 1,
         description: "Gold-tone watch with a brown leather-style strap.",
-        image: "product/brown-leather-strap-gold-dial-watch.jpeg",
+        image: "product/watches/brown-leather-strap-gold-dial-watch.jpeg",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -122,12 +124,15 @@ export const PRODUCTS = [
     {
         id: "black-leather-strap-rectangular-watch",
         name: "Black Strap Rectangular Watch",
-        category: { id: "watches", name: "Watches", image: "product/ladies-gold-watch-and-bracelet-set.png" },
+        category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 50,
         stock: 1,
         description: "Rectangular gold-tone watch with a black strap.",
-        image: "product/gold-tone-rectangular-black-strap-watch.png",
-        gallery: [],
+        image: "product/watches/gold-tone-rectangular-black-strap-watch.png",
+        gallery: [
+            "product/watches/black-leather-strap-rectangular-watch.jpeg",
+            "product/watches/assorted-rectangle-dial-watches.jpeg"
+        ],
         videos: [],
         is_featured: false,
         created_at: "2026-11-01"
@@ -135,11 +140,11 @@ export const PRODUCTS = [
     {
         id: "burgundy-strap-square-dial-watch",
         name: "Burgundy Strap Square Dial Watch",
-        category: { id: "watches", name: "Watches", image: "product/ladies-gold-watch-and-bracelet-set.png" },
+        category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 50,
         stock: 1,
         description: "Square gold-tone watch with a burgundy strap.",
-        image: "product/burgundy-strap-square-dial-watch.jpeg",
+        image: "product/watches/burgundy-strap-square-dial-watch.jpeg",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -148,11 +153,11 @@ export const PRODUCTS = [
     {
         id: "silver-tone-white-dial-watch",
         name: "Silver-Tone White Dial Watch",
-        category: { id: "watches", name: "Watches", image: "product/ladies-gold-watch-and-bracelet-set.png" },
+        category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 95,
         stock: 1,
         description: "Silver-tone watch with a simple white dial.",
-        image: "product/silver-tone-white-dial-watch.jpeg",
+        image: "product/watches/silver-tone-white-dial-watch.jpeg",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -161,11 +166,11 @@ export const PRODUCTS = [
     {
         id: "pearl-crystal-watch-and-bracelet-set",
         name: "Pearl Crystal Watch and Bracelet Set",
-        category: { id: "watches", name: "Watches", image: "product/ladies-gold-watch-and-bracelet-set.png" },
+        category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 95,
         stock: 1,
         description: "Gold-tone watch and matching bracelet with pearl-style and crystal accents.",
-        image: "product/pearl-crystal-watch-and-bracelet-set.png",
+        image: "product/watches/pearl-crystal-watch-and-bracelet-set.png",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -174,11 +179,11 @@ export const PRODUCTS = [
     {
         id: "gold-two-tone-yellow-dial-watch",
         name: "Gold Two-Tone Yellow Dial Watch",
-        category: { id: "watches", name: "Watches", image: "product/ladies-gold-watch-and-bracelet-set.png" },
+        category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 50,
         stock: 1,
         description: "Gold-tone watch with a yellow dial and two-tone metal band.",
-        image: "product/gold-two-tone-yellow-dial-watch.jpeg",
+        image: "product/watches/gold-two-tone-yellow-dial-watch.jpeg",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -187,11 +192,11 @@ export const PRODUCTS = [
     {
         id: "gold-tone-round-bracelet-watch",
         name: "Gold-Tone Round Bracelet Watch",
-        category: { id: "watches", name: "Watches", image: "product/ladies-gold-watch-and-bracelet-set.png" },
+        category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 50,
         stock: 1,
         description: "Gold-tone watch with a round dial and metal bracelet.",
-        image: "product/gold-tone-round-bracelet-watch.jpeg",
+        image: "product/watches/gold-tone-round-bracelet-watch.jpeg",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -200,11 +205,11 @@ export const PRODUCTS = [
     {
         id: "two-tone-metal-band-watch",
         name: "Two-Tone Metal Band Watch",
-        category: { id: "watches", name: "Watches", image: "product/ladies-gold-watch-and-bracelet-set.png" },
+        category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 50,
         stock: 1,
         description: "Gold-tone watch with a yellow dial and two-tone metal band.",
-        image: "product/two-tone-metal-band-watch.jpeg",
+        image: "product/watches/two-tone-metal-band-watch.jpeg",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -213,11 +218,11 @@ export const PRODUCTS = [
     {
         id: "gold-silver-stretch-band-watch",
         name: "Silver Watch",
-        category: { id: "watches", name: "Watches", image: "product/ladies-gold-watch-and-bracelet-set.png" },
+        category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
         price: 95,
         stock: 1,
         description: "Silver watch for a sophisticated look.",
-        image: "product/gold-silver-stretch-band-watch.jpeg",
+        image: "product/watches/gold-silver-stretch-band-watch.jpeg",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -226,11 +231,11 @@ export const PRODUCTS = [
     {
         id: "plush-handbag-color-assortment",
         name: "Plush Handbag Color Assortment",
-        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 75,
         stock: 100,
         description: "A colorful assortment of plush handbags with beaded handles.",
-        image: "product/plush-handbag-color-assortment.png",
+        image: "product/bags/plush-handbag-color-assortment.png",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -239,11 +244,11 @@ export const PRODUCTS = [
     {
         id: "plush-handbag-display",
         name: "Plush Handbag Display Set",
-        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 75,
         stock: 100,
         description: "A display of plush handbags in several colors.",
-        image: "product/plush-handbag-display.png",
+        image: "product/bags/plush-handbag-display.png",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -252,11 +257,11 @@ export const PRODUCTS = [
     {
         id: "black-plush-beaded-handle-handbag",
         name: "Black Plush Beaded-Handle Handbag",
-        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 75,
         stock: 100,
         description: "A black plush handbag with a beaded handle.",
-        image: "product/black-plush-beaded-handle-handbag.png",
+        image: "product/bags/black-plush-beaded-handle-handbag.png",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -265,11 +270,11 @@ export const PRODUCTS = [
     {
         id: "gray-plush-beaded-handle-handbag",
         name: "Gray Plush Beaded-Handle Handbag",
-        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 75,
         stock: 100,
         description: "A gray plush handbag with a beaded handle.",
-        image: "product/gray-plush-beaded-handle-handbag.png",
+        image: "product/bags/gray-plush-beaded-handle-handbag.png",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -278,11 +283,11 @@ export const PRODUCTS = [
     {
         id: "pink-plush-beaded-handle-handbag",
         name: "Pink Plush Beaded-Handle Handbag",
-        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 75,
         stock: 100,
         description: "A pink plush handbag with a beaded handle.",
-        image: "product/pink-plush-beaded-handle-handbag.png",
+        image: "product/bags/pink-plush-beaded-handle-handbag.png",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -291,11 +296,11 @@ export const PRODUCTS = [
     {
         id: "taupe-plush-beaded-handle-handbag",
         name: "Taupe Plush Beaded-Handle Handbag",
-        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 75,
         stock: 100,
         description: "A taupe plush handbag with a beaded handle.",
-        image: "product/taupe-plush-beaded-handle-handbag.png",
+        image: "product/bags/taupe-plush-beaded-handle-handbag.png",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -304,11 +309,11 @@ export const PRODUCTS = [
     {
         id: "plush-handbag-color-collection",
         name: "Plush Handbag Color Collection",
-        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 75,
         stock: 100,
         description: "A collection of plush handbags in assorted colors.",
-        image: "product/plush-handbag-color-collection.png",
+        image: "product/bags/plush-handbag-color-collection.png",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -317,11 +322,11 @@ export const PRODUCTS = [
     {
         id: "taupe-plush-handbag-fluffy-hat-set",
         name: "Taupe Plush Handbag and Fluffy Hat Set",
-        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 85,
         stock: 50,
         description: "A taupe plush handbag that comes with a matching fluffy hat.",
-        image: "product/taupe-plush-handbag-fluffy-hat-set.jpeg",
+        image: "product/bags/taupe-plush-handbag-fluffy-hat-set.jpeg",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -330,11 +335,11 @@ export const PRODUCTS = [
     {
         id: "black-plush-handbag-fluffy-hat-set",
         name: "Black Plush Handbag and Fluffy Hat Set",
-        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 85,
         stock: 50,
         description: "A black plush handbag that comes with a matching fluffy hat.",
-        image: "product/black-plush-handbag-fluffy-hat-set.jpeg",
+        image: "product/bags/black-plush-handbag-fluffy-hat-set.jpeg",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -343,11 +348,11 @@ export const PRODUCTS = [
     {
         id: "hot-pink-plush-handbag-fluffy-hat-set",
         name: "Hot Pink Plush Handbag and Fluffy Hat Set",
-        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 85,
         stock: 50,
         description: "A hot pink plush handbag that comes with a matching fluffy hat.",
-        image: "product/hot-pink-plush-handbag-fluffy-hat-set.jpeg",
+        image: "product/bags/hot-pink-plush-handbag-fluffy-hat-set.jpeg",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -356,11 +361,11 @@ export const PRODUCTS = [
     {
         id: "light-pink-plush-handbag-fluffy-hat-set",
         name: "Light Pink Plush Handbag and Fluffy Hat Set",
-        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 85,
         stock: 50,
         description: "A light pink plush handbag that comes with a matching fluffy hat.",
-        image: "product/light-pink-plush-handbag-fluffy-hat-set.jpeg",
+        image: "product/bags/light-pink-plush-handbag-fluffy-hat-set.jpeg",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -369,11 +374,11 @@ export const PRODUCTS = [
     {
         id: "white-plush-handbag-fluffy-hat-set",
         name: "White Plush Handbag and Fluffy Hat Set",
-        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 85,
         stock: 50,
         description: "A white plush handbag that comes with a matching fluffy hat.",
-        image: "product/white-plush-handbag-fluffy-hat-set.jpeg",
+        image: "product/bags/white-plush-handbag-fluffy-hat-set.jpeg",
         gallery: [],
         videos: [],
         is_featured: false,
@@ -382,16 +387,17 @@ export const PRODUCTS = [
     {
         id: "plush-handbag-fluffy-hat-color-collection",
         name: "Plush Handbag and Fluffy Hat Color Collection",
-        category: { id: "handbags", name: "Handbags", image: "product/black-plush-beaded-handle-handbag.png" },
+        category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
         price: 85,
         stock: 50,
         description: "A collection of plush handbags, each paired with a fluffy hat.",
-        image: "product/plush-handbag-fluffy-hat-color-collection.jpeg",
+        image: "product/bags/plush-handbag-fluffy-hat-color-collection.jpeg",
         gallery: [],
         videos: [],
         is_featured: false,
         created_at: "2026-11-03"
-    }
+    },
+    ...FOOTWEAR_PRODUCTS
 ];
 
 const BANNERS = [
@@ -399,7 +405,7 @@ const BANNERS = [
         eyebrow: "NEW COLLECTION",
         title: "Discover products you'll love.",
         description: "Explore our latest collection and find something made just for you.",
-        image: "product/watch-stock-display.jpeg",
+        image: "product/watches/watch-stock-display.jpeg",
         alt: "Apexmall shopping collection",
         ctaLabel: "Shop Now",
         ctaHref: "shop.html"
@@ -408,7 +414,7 @@ const BANNERS = [
         eyebrow: "A LITTLE EVERYDAY LUXURY",
         title: "Find a piece that feels like you.",
         description: "Explore the watch and bracelet set, and browse the collection at Apexmall.",
-        image: "product/pearl-crystal-watch-and-bracelet-set.png",
+        image: "product/watches/watch-collection-flatlay.jpeg",
         alt: "Ladies gold watch and bracelet set",
         ctaLabel: "Shop Watches",
         ctaHref: "shop.html?category=Watches"
@@ -456,6 +462,12 @@ export async function getProductsByIds(ids) {
     return PRODUCTS.filter(product => requestedIds.has(product.id));
 }
 
+export function getAvailableStock(product, inCart = 0) {
+    return Number.isFinite(product.stock)
+        ? Math.max(0, product.stock - inCart)
+        : Infinity;
+}
+
 export async function getCategories() {
     const categories = new Map();
     PRODUCTS.forEach(product => {
@@ -488,10 +500,6 @@ export function formatMoney(amount) {
         minimumFractionDigits: 2,
         maximumFractionDigits: 2
     })}`;
-}
-
-function getCategoryName(product) {
-    return typeof product.category === "string" ? product.category : product.category?.name || "";
 }
 
 export function productImageTag(product, className = "") {
@@ -543,7 +551,7 @@ export function updateCartCount() {
     document.querySelectorAll("[data-stock-product]").forEach(button => {
         const product = getProductById(button.dataset.stockProduct);
         const inCart = cart.find(item => item.id === button.dataset.stockProduct)?.quantity || 0;
-        const available = product ? Math.max(0, product.stock - inCart) : 0;
+        const available = product ? getAvailableStock(product, inCart) : 0;
         button.disabled = available <= 0;
         button.textContent = available > 0 ? "Add to Cart" : "Out of Stock";
     });
@@ -557,7 +565,7 @@ export function addToCart(productId, quantity = 1) {
     const existing = cart.find(item => item.id === productId);
     const currentQuantity = existing?.quantity || 0;
 
-    if (currentQuantity + quantity > product.stock) {
+    if (Number.isFinite(product.stock) && currentQuantity + quantity > product.stock) {
         showToast(currentQuantity >= product.stock
             ? "This product is out of stock."
             : `Only ${product.stock - currentQuantity} more available.`);
@@ -571,7 +579,9 @@ export function addToCart(productId, quantity = 1) {
     }
 
     saveCart(cart);
-    showToast(`${product.name} added to your cart.`);
+    showToast(product.pairsPerCarton
+        ? `${quantity} ${quantity === 1 ? "carton" : "cartons"} of ${product.name} added at the carton price.`
+        : `${product.name} added to your cart.`);
     return true;
 }
 
@@ -602,33 +612,28 @@ export function createProductCard(product) {
     imageContainer.className = "product-image";
     imageContainer.appendChild(productImageTag(product));
 
-    const category = document.createElement("p");
-    category.className = "product-category";
-    category.textContent = getCategoryName(product);
-
     const name = document.createElement("h3");
     name.textContent = product.name;
 
     const price = document.createElement("p");
     price.className = "product-price";
-    price.textContent = formatMoney(product.price);
+    price.textContent = product.pairsPerCarton
+        ? `${formatMoney(product.pairPrice)} / pair · ${formatMoney(product.price)} / carton`
+        : formatMoney(product.price);
 
-    link.append(imageContainer, category, name, price);
+    link.append(imageContainer, name, price);
 
     const addButton = document.createElement("button");
     addButton.type = "button";
     addButton.className = "add-to-cart";
+    addButton.textContent = "Add to Cart";
+    addButton.setAttribute("aria-label", product.pairsPerCarton
+        ? `Add one full carton of ${product.name} to cart`
+        : `Add ${product.name} to cart`);
     addButton.dataset.stockProduct = product.id;
     addButton.addEventListener("click", () => addToCart(product.id));
 
-    const enquiry = document.createElement("a");
-    enquiry.className = "product-enquiry";
-    enquiry.href = productEnquiryUrl(product);
-    enquiry.target = "_blank";
-    enquiry.rel = "noopener";
-    enquiry.textContent = "Ask about this product";
-
-    card.append(link, addButton, enquiry);
+    card.append(link, addButton);
     return card;
 }
 
