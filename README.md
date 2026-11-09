@@ -4,9 +4,9 @@ A static storefront built with HTML, CSS, and JavaScript. The product catalog is
 
 ## Add products, images, and videos
 
-Put product photos and video files in the appropriate category folder inside [product](./product/) (for example, [bags](./product/bags/), [watches](./product/watches/), or [footwear](./product/footwear/)), then add product records to the `PRODUCTS` array in [js/app.js](./js/app.js). Media paths are relative to the project root. Videos should be MP4 or WebM files; for large videos, use a video host and provide a direct link to the video file.
+Put product photos and video files in the appropriate category folder inside [product](./product/) (for example, [bags](./product/bags/), [watches](./product/watches/), or [footwear](./product/footwear/)), then add the product record to that category's catalog file: [js/bag-products.js](./js/bag-products.js), [js/watches-products.js](./js/watches-products.js), or [js/footwear-products.js](./js/footwear-products.js). Media paths are relative to the project root. Videos should be MP4 or WebM files; for large videos, use a video host and provide a direct link to the video file.
 
-Add another product object inside the existing array (keep its surrounding `export const PRODUCTS = [ ... ];`):
+Add another product object inside the matching exported array (for example, `BAG_PRODUCTS` or `WATCH_PRODUCTS`):
 
 ```js
 {

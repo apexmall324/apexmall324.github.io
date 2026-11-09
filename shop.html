@@ -150,6 +150,24 @@
 
             </select>
 
+            <fieldset class="price-filter">
+                <legend>Price range</legend>
+                <label class="visually-hidden" for="minimum-price">Minimum price</label>
+                <input id="minimum-price" type="number" min="0" step="any" inputmode="decimal" placeholder="Min">
+                <span aria-hidden="true">–</span>
+                <label class="visually-hidden" for="maximum-price">Maximum price</label>
+                <input id="maximum-price" type="number" min="0" step="any" inputmode="decimal" placeholder="Max">
+            </fieldset>
+
+            <select id="size-filter" aria-label="Filter by size">
+                <option value="all">All Sizes</option>
+            </select>
+
+            <select id="color-filter" aria-label="Filter by color">
+                <option value="all">All Colors</option>
+            </select>
+
+            <button id="clear-filters" class="clear-filters" type="button">Clear filters</button>
 
         </div>
 
