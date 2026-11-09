@@ -1,3 +1,6 @@
+import { BAG_PRODUCTS } from "./bag-products.js";
+import { WATCH_PRODUCTS } from "./watches-products.js";
+
 const FOOTWEAR_LISTINGS = [
     {
         "id": "footwear-0169b",
@@ -1513,3 +1516,8 @@ export const FOOTWEAR_PRODUCTS = FOOTWEAR_LISTINGS.map(product => {
         description: `${details.description} Sizes ${product.sizeRange}. Sold by full carton only: ${product.pairsPerCarton} pairs per carton at ${product.pairPrice} per pair; carton total ${product.cartonPrice}.`
     };
 });
+export const PRODUCTS = [
+    ...WATCH_PRODUCTS,
+    ...BAG_PRODUCTS,
+    ...FOOTWEAR_PRODUCTS
+];

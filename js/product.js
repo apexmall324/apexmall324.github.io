@@ -28,6 +28,14 @@ function renderProduct(product) {
     const layout = document.createElement("div");
     layout.className = "product-detail";
 
+    const backToCollection = document.createElement("a");
+    const category = categoryName(product);
+    backToCollection.className = "product-back-link";
+    backToCollection.href = category
+        ? `shop.html?category=${encodeURIComponent(category)}`
+        : "shop.html";
+    backToCollection.textContent = "← Back to collection";
+
     const media = document.createElement("div");
     media.className = "product-detail-image";
     const imageContainer = document.createElement("div");
@@ -135,9 +143,9 @@ function renderProduct(product) {
     const content = document.createElement("div");
     content.className = "product-detail-content";
 
-    const category = document.createElement("p");
-    category.className = "eyebrow";
-    category.textContent = categoryName(product);
+    const categoryLabel = document.createElement("p");
+    categoryLabel.className = "eyebrow";
+    categoryLabel.textContent = category;
 
     const name = document.createElement("h1");
     name.textContent = product.name;
@@ -254,7 +262,8 @@ function renderProduct(product) {
     });
 
     content.append(
-        category,
+        backToCollection,
+        categoryLabel,
         name,
         price,
         ...(pairPrice ? [pairPrice] : []),
@@ -283,9 +292,13 @@ async function init() {
     renderProduct(product);
 
     const products = await getProducts();
-    const related = shuffleProducts(products.filter(item =>
+    const sameCategory = shuffleProducts(products.filter(item =>
         categoryName(item) === categoryName(product) && item.id !== product.id
-    )).slice(0, 4);
+    ));
+    const otherCategories = shuffleProducts(products.filter(item =>
+        categoryName(item) !== categoryName(product) && item.id !== product.id
+    ));
+    const related = [...sameCategory, ...otherCategories].slice(0, 4);
     relatedContainer.replaceChildren();
     related.forEach(item => relatedContainer.appendChild(createProductCard(item)));
     if (!related.length) {
