@@ -1,4 +1,6 @@
-import { PRODUCTS } from "./footwear-products.js";
+// import { PRODUCTS } from "./footwear-products.js";
+import { BAG_PRODUCTS } from "./bag-products.js";
+import { WATCH_PRODUCTS } from "./watches-products.js";
 
 export const WHATSAPP_NUMBER = "233597323795";
 const CART_KEY = "cart";
@@ -625,3 +627,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     displayCategoryRail().catch(error => showLoadError("category-rail", error));
 });
+
+
+export const PRODUCTS = [
+    ...WATCH_PRODUCTS,
+    ...BAG_PRODUCTS,
+    // ...FOOTWEAR_PRODUCTS
+];

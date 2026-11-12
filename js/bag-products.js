@@ -237,7 +237,7 @@ export const BAG_PRODUCTS = [
         id: "structured-handbag-color-collection",
         name: "Mschcino Structured Handbag Color Collection",
         category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
-        price: 75,
+        price: 370,
         stock: 100,
         description: "A collection view showcasing structured handbags in an assortment of colors, with Mschcino lettering visible on the pictured front details. Compare the finishes, then message us to check which color you can order.",
         image: "product/bags/structured-handbag-color-collection.png",
