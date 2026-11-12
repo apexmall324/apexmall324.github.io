@@ -311,4 +311,21 @@ export const BAG_PRODUCTS = [
         is_featured: false,
         created_at: "2026-11-09"
     },
+
+    {
+    id: "pedra-saddle-bag-blue",
+    name: "Pedra Saddle Bag - Blue",
+    category: { id: "handbags", name: "Handbags", image: "product/bags/black-plush-beaded-handle-handbag.png" },
+    price: 480,
+    stock: 3,
+    description: "Elegant Pedra saddle bag in deep blue with light blue contrast stitching. Features a curved flap design, top handle, and gold-tone clasp. Spacious, stylish and perfect for everyday wear or special occasions.",
+    image: "product/bags/IMG_2634.jpeg",
+    gallery: [
+        "product/bags/IMG_2633.jpeg",
+        "product/bags/IMG_2632.jpeg"
+    ],
+    videos: [],
+    is_featured: false,
+    created_at: "2026-11-12"
+},
 ];
