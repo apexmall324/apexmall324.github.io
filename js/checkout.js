@@ -71,7 +71,6 @@ async function loadCheckout() {
             wholesaleNote.textContent = "Wholesale only; full cartons only, no individual pairs.";
             details.append(pairPrice, wholesaleNote);
         }
-
         const lineTotal = document.createElement("strong");
         lineTotal.textContent = product.pairsPerCarton
             ? `Carton total: ${formatMoney(product.price * quantity)}`

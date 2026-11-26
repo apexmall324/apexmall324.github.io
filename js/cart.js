@@ -104,10 +104,6 @@ async function displayCart() {
         return;
     }
 
-    const subtotal = availableCart.reduce((sum, item) => {
-        return sum + productById.get(item.id).price * item.quantity;
-    }, 0);
-
     const layout = document.createElement("div");
     layout.className = "cart-layout";
     const items = document.createElement("div");
@@ -117,6 +113,10 @@ async function displayCart() {
     const summary = document.createElement("aside");
     summary.className = "cart-summary";
     summary.appendChild(textElement("h2", "", "Summary"));
+
+    const subtotal = availableCart.reduce((sum, item) => {
+        return sum + productById.get(item.id).price * item.quantity;
+    }, 0);
 
     const subtotalRow = document.createElement("div");
     subtotalRow.className = "summary-row";

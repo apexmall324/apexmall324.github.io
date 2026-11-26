@@ -1,6 +1,7 @@
 // import { PRODUCTS } from "./footwear-products.js";
 import { BAG_PRODUCTS } from "./bag-products.js";
 import { WATCH_PRODUCTS } from "./watches-products.js";
+import { COMBO_PRODUCTS } from "./combos.js";
 
 export const WHATSAPP_NUMBER = "233597323795";
 const CART_KEY = "cart";
@@ -88,6 +89,11 @@ export async function getCategories() {
                 image: existing?.image || image
             });
         }
+    });
+    categories.set("Combos", {
+        id: "combos",
+        name: "Combos",
+        image: categories.get("Combos")?.image || ""
     });
     return [...categories.values()].sort((a, b) => a.name.localeCompare(b.name));
 }
@@ -208,7 +214,7 @@ function showToast(message) {
 
 export function createProductCard(product) {
     const card = document.createElement("article");
-    card.className = "product-card";
+    card.className = `product-card product-card-${product.id}`;
 
     const link = document.createElement("a");
     link.href = `product.html?id=${encodeURIComponent(product.id)}`;
@@ -632,5 +638,6 @@ document.addEventListener("DOMContentLoaded", () => {
 export const PRODUCTS = [
     ...WATCH_PRODUCTS,
     ...BAG_PRODUCTS,
+    ...COMBO_PRODUCTS,
     // ...FOOTWEAR_PRODUCTS
 ];

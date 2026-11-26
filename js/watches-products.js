@@ -12,19 +12,6 @@ export const WATCH_PRODUCTS = [
         is_featured: true,
         created_at: "2026-10-31"
     },
-    {
-        id: "ladies-rhinestone-heart-watch",
-        name: "Ladies Gold Rhinestone Heart Watch",
-        category: { id: "watches", name: "Watches", image: "product/watches/ladies-gold-watch-and-bracelet-set.png" },
-        price: 75,
-        stock: 7,
-        description: "A gold-tone ladies' watch with a heart-shaped silhouette and sparkling rhinestone accents for a romantic, dressy look. Its decorative design makes it an easy statement accessory for celebrations or evening outfits.",
-        image: "product/watches/gold-heart-watch-and-bracelet-set.jpg",
-        gallery: [],
-        videos: [],
-        is_featured: false,
-        created_at: "2026-11-01"
-    },
         {
         id: "ladies-rhinestone-heart-watch",
         name: "Ladies Gold Rhinestone Heart Watch",

@@ -1,5 +1,6 @@
 import { BAG_PRODUCTS } from "./bag-products.js";
 import { WATCH_PRODUCTS } from "./watches-products.js";
+import { COMBO_PRODUCTS } from "./combos.js";
 
 const FOOTWEAR_LISTINGS = [
     {
@@ -1519,5 +1520,6 @@ export const FOOTWEAR_PRODUCTS = FOOTWEAR_LISTINGS.map(product => {
 export const PRODUCTS = [
     ...WATCH_PRODUCTS,
     ...BAG_PRODUCTS,
+    ...COMBO_PRODUCTS,
     ...FOOTWEAR_PRODUCTS
 ];
