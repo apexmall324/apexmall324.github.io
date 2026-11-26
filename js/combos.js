@@ -1,0 +1,93 @@
+export const COMBO_PRODUCTS = [
+    {
+        id: "gold-watch-bracelet-lip-gloss-gift-set",
+        name: "Gold Watch, Bracelet & Double-Ended Lip Gloss Gift Set",
+        category: { id: "combos", name: "Combos", image: "product/combos/watch-bracelet-combo4.png" },
+        price: 150,
+        stock: 1,
+        description: "A gift set featuring a gold-tone round watch with crystal accents, a matching jeweled bracelet, and a double-ended pink lip gloss, presented in a blue gift box.",
+        image: "product/combos/watch-bracelet-combo4.png",
+        gallery: [],
+        videos: [],
+        is_featured: true,
+        created_at: "2026-11-21"
+    },
+    {
+        id: "gold-square-watch-bracelet-gift-set",
+        name: "Gold Square Watch, Bracelet & Lipstick Gift Set",
+        category: { id: "combos", name: "Combos", image: "product/combos/watch-bracelet-combo3.png" },
+        price: 150,
+        stock: 1,
+        description: "A gift set featuring a gold-tone square watch with crystal accents, a matching jeweled bracelet, and red lipstick, presented in a gift box.",
+        image: "product/combos/watch-bracelet-combo3.png",
+        gallery: [],
+        videos: [],
+        is_featured: true,
+        created_at: "2026-11-21"
+    },
+    {
+        id: "mens-two-watch-gift-set",
+        name: "Men's 2-Watch Gift Set",
+        category: { id: "combos", name: "Combos", image: "product/combos/2-men-watch-combo.png" },
+        price: 250,
+        stock: 1,
+        description: "A men's gift set featuring two watches: a silver-tone chronograph-style watch with a brown strap and a silver-tone watch with a black strap. Presented together in a gift box.",
+        image: "product/combos/2-men-watch-combo.png",
+        gallery: [],
+        videos: [],
+        is_featured: true,
+        created_at: "2026-11-21"
+    },
+    {
+        id: "pink-beaded-watch-lip-gloss-gift-set",
+        name: "Pink Beaded Watch, Lip Gloss & Charm Bracelet Gift Set",
+        category: { id: "combos", name: "Combos", image: "product/combos/watch-bracelet-combo2.png" },
+        price: 120,
+        stock: 1,
+        description: "A pink gift set featuring a stylish gold and brown dial watch, pink lip gloss, and a pink beaded charm bracelet with matching accessories. Presented in a gift box and priced at GH₵120.",
+        image: "product/combos/watch-bracelet-combo2.png",
+        gallery: [],
+        videos: [],
+        is_featured: true,
+        created_at: "2026-11-21"
+    },
+    {
+        id: "cute-black-watch-double-ended-lip-gloss-beaded-bracelet-gift-set",
+        name: "Gift Combo - Black Square Watch, Lip Gloss & Pink Beaded Bracelet Set",
+        category: { id: "combos", name: "Combos", image: "product/combos/watch-bracelet-combo.png" },
+        price: 120,
+        stock: 1,
+        description: "A cute gift set with a stylish black square watch featuring sparkle detail, a double-ended lip gloss in clear and pink, and a pink beaded charm bracelet with Hello Kitty, strawberry, and heart charms. GH₵120 with box. Perfect for yourself or as a gift for a bestie, sister, or special someone.",
+        image: "product/combos/watch-bracelet-combo.png",
+        gallery: [],
+        videos: [],
+        is_featured: true,
+        created_at: "2026-11-21"
+    },
+    {
+        id: "ladies-2-in-1-watch-set-green-brown-lip-gloss",
+        name: "Ladies 2-in-1 Watch Set - Green & Brown Leather Strap Watches + Lip Gloss",
+        category: { id: "combos", name: "Combos", image: "product/combos/2-watch-combo.png" },
+        price: 120,
+        stock: 1,
+        description: "A beautiful ladies 2-in-1 watch gift set featuring a light green leather strap oval-face watch with a gold case and silver dial, and a brown leather strap round-face watch with a gold case and white dial. The set also includes a gold chain bracelet, strawberry pink lip gloss/lip oil, and a beautiful gift box - ready for gifting.",
+        image: "product/combos/2-watch-combo.png",
+        gallery: [],
+        videos: [],
+        is_featured: true,
+        created_at: "2026-11-21"
+    },
+    {
+        id: "orange-black-luxury-handbag-wallet-watch-gift-set",
+        name: "Orange & Black Luxury Handbag + Wallet + Watch Gift Set Combo",
+        category: { id: "combos", name: "Combos", image: "product/combos/bag-watch-combo-orange.png" },
+        price: 250,
+        stock: 1,
+        description: "A stunning orange and black luxury handbag set for ladies, presented as a full gift combo with a matching handbag, wallet, watch, and accessories. This complete set is ready for gifting and ideal for occasions or everyday statement styling.",
+        image: "product/combos/bag-watch-combo-orange.png",
+        gallery: [],
+        videos: [],
+        is_featured: true,
+        created_at: "2026-11-21"
+    }
+];
