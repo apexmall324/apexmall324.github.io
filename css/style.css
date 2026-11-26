@@ -2043,7 +2043,6 @@ button {
         30px;
 }
 
-
 .summary-row {
 
     display:
@@ -6573,6 +6572,43 @@ body.home-page {
 
 .shop-page .product-image img {
     transition: transform .5s ease;
+}
+
+.shop-page .product-card-ladies-2-in-1-watch-set-green-brown-lip-gloss .product-image {
+    aspect-ratio: 1 / 1.06;
+}
+
+.product-card .product-image img {
+    padding: 0 !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+.product-card .product-image,
+.home-page .product-card .product-image,
+.shop-page .product-card .product-image {
+    overflow: hidden;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+}
+
+.product-detail-image .product-image,
+.product-page-shell .product-detail-image .product-image {
+    overflow: hidden;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+}
+
+.product-detail-image .product-image img,
+.product-page-shell .product-detail-image .product-image img {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0 !important;
+    border: 0;
+    object-fit: cover !important;
+    object-position: center !important;
 }
 
 .shop-page .product-card:hover .product-image img {
